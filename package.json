@@ -2,6 +2,7 @@
   "name": "foge-foge-she-she",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/BrenoMorim/foge-foge-she-she.git",
   "dependencies": {
     "@types/node": "^16.11.21",
     "@types/react": "^17.0.38",
