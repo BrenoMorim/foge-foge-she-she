@@ -1,0 +1,28 @@
+@import 'styles/variaveis';
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $roxo;
+}
+
+.loader {
+    border: 16px solid $cinza;
+    border-top: 16px solid $roxo;
+    border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

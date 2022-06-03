@@ -1,0 +1,37 @@
+@import 'styles/variaveis'; 
+
+.telaFinal {
+    z-index: 2;
+    width: 70vw;
+    height: auto;
+    position: absolute;
+    right: 15vw;
+    top: 20vh;
+    opacity: 90%;
+    border-radius: 3rem;
+    background-color: $roxo;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__titulo {
+        color: $beje;
+        text-align: center;
+    }
+    &__botao {
+        padding: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        color: $roxo;
+        border: none;
+        border-radius: 2rem;
+    }
+    &__botao:hover {
+        border: 2px solid $preto;
+        opacity: 0.9;
+    }
+    &__botao:active {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,30 @@
+@import 'styles/variaveis.scss';
+
+.chamada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .75rem;
+    color: $roxo;
+    font-size: 1.2rem;
+    text-align: center;
+
+    .titulo {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+    }
+
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    .personagem {
+        width: 80px;
+        height: 80px;
+        margin: .2rem;
+        border: 3px solid $preto;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import "styles/variaveis.scss";
+
+body {
+  background-color: $beje;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 850px;
+  padding-bottom: 1rem;
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+}

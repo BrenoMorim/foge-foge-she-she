@@ -1,0 +1,38 @@
+@import 'styles/variaveis.scss';
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    row-gap: .5rem;
+    background-color: $roxo;
+    padding: 1rem;
+    border-radius: .5rem;
+    
+    &__rotulo {
+        text-align: center;
+        font-size: 1.2rem;
+        color: $beje;
+    }
+
+    &__jogar, &__fases {
+        color: $roxo;
+        background-color: $cinza;
+        border: 1px $roxo solid;
+        border-radius: 5px;
+        padding: .5rem 0;
+        text-align: center;
+    }
+    &__jogar:hover, &__fases:hover {
+        color: $preto;
+        border: .2rem solid $preto;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    &__jogar:active {
+        transform: scale(1.1);
+        font-weight: bold;
+    }
+}

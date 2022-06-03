@@ -1,0 +1,28 @@
+@import 'styles/variaveis';
+
+.naoEncontrado {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: $roxo;
+    color: $beje;
+    width: 80vw;
+    max-width: 700px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    
+    &__botao {
+        background-color: $cinza;
+        border-radius: 1.25rem;
+        padding: 1rem;
+        color: $roxo;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    &__botao:hover {
+        opacity: 0.8;
+    }
+}
