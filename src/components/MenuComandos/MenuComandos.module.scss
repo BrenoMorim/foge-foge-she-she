@@ -4,6 +4,14 @@
     display: flex;
     justify-content: space-evenly;
     margin-top: 1.25rem;
+    @media screen and (min-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        row-gap: 1rem;
+        right: 15vw;
+        bottom: 15vh;
+    }
     &__botao {
         border: .25rem solid $preto;
         border-radius: .25rem;

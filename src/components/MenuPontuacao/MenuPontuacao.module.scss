@@ -5,6 +5,15 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: column;
+        position: fixed;
+        left: 10vw;
+        bottom: 40vh;
+        width: auto;
+        row-gap: 2rem;
+        padding: 1.5rem;
+    }
     color: $roxo;
     border: .3rem solid $roxo;
     border-radius: .5rem;

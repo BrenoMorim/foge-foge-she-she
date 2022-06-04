@@ -2,12 +2,9 @@
     margin: 0 auto;
     margin-top: 1.5rem;
 }
-
 .mapa {
-
     width: 100vw;
     max-width: 1000px;
-
     &__linha {
         margin-top: 0;
         margin-bottom: 0;
@@ -19,13 +16,11 @@
         margin: 0;
         padding: 0;
     }
-
     @media screen and (min-width: 1200px) {
         &__pixel {
             width: 4rem;
         }
     }
-
     &__pixel img {
         width: 100%;
         height: 100%;
