@@ -9,10 +9,6 @@ export default function MenuEscolherFase() {
 
     function irParaFase(evento: React.FormEvent<HTMLFormElement>) {
         evento.preventDefault();
-        if (fase === undefined) {
-            alert("Selecione uma fase!");
-            return;
-        }
         navegar(`/fase/${fase}`);
     }
 
@@ -25,7 +21,7 @@ export default function MenuEscolherFase() {
                     <option key={fase.id} value={fase.id}>{fase.label}</option>
                 ))}
             </select>
-            <button type="submit" className={styles.menu__jogar}>Jogar</button>
+            <button type="submit" role="button" disabled={fase === undefined} className={styles.menu__jogar}>Jogar</button>
         </form>
     );
 }

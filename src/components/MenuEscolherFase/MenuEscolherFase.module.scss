@@ -35,4 +35,8 @@
         transform: scale(1.1);
         font-weight: bold;
     }
+    &__jogar:disabled {
+        cursor: not-allowed;
+        opacity: 0.8;
+    }
 }
