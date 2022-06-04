@@ -10,7 +10,7 @@ export default function verificaSeEstaPreso(faseAtual: IFase, especialAtivo: boo
       estaPreso = false;
     };
     listaDirecoes.forEach(direcao => {
-      if (ehCaminho(direcao, faseAtual, faseAtual.posicaoPersonagens.sherlock)) {
+      if (ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock)) {
         estaPreso = false;
       } 
     });

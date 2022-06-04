@@ -55,7 +55,7 @@ export default function MenuComandos({
             <button
               key={index}
               onClick={() => executaComando(direcao)}
-              disabled={(!ehCaminho(direcao, faseAtual, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
+              disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
               className={styles.comandos__botao}
             >
               <img alt={direcao.toString} src={`/assets/botoes/${direcao.toString}.svg`}/>

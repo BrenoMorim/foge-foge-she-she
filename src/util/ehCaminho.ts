@@ -1,11 +1,11 @@
 import {direcoes} from "types/Direcoes";
-import IFase from "types/IFase";
 import IPosicao from "types/IPosicao";
 import getProximaPosicao from "./getProximaPosicao";
+import { caracteres } from 'data/caracteres';
 
-export default function ehCaminho(direcao: typeof direcoes.Baixo, fase: IFase, posicaoAtual: IPosicao) {    
+export default function ehCaminho(direcao: typeof direcoes.Baixo, mapa: string[][], posicaoAtual: IPosicao) {    
     if (posicaoAtual.i === -1 || posicaoAtual.j === -1) return false;
     const proximaPosicao = getProximaPosicao(direcao, posicaoAtual);
-    let caracteresValidos = [' ', '*', 'E', 'S'];
-    return caracteresValidos.indexOf(fase.mapa[proximaPosicao.i][proximaPosicao.j]) !== -1; 
+    let caracteresValidos = [caracteres.espacoVazio, caracteres.racao, caracteres.especial, caracteres.sherlock];
+    return caracteresValidos.indexOf(mapa[proximaPosicao.i][proximaPosicao.j]) !== -1; 
 }

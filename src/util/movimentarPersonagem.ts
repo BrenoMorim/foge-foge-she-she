@@ -6,6 +6,7 @@ import IFase from "types/IFase";
 import ehCaminho from "util/ehCaminho";
 import getProximaPosicao from "util/getProximaPosicao";
 import ManipuladorDeState from "./ManipuladorDeState";
+import moverNoMapa from "./moverNoMapa";
 import usarEspecial from "./usarEspecial";
 
 export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoes.Cima, manipuladorDeState: ManipuladorDeState, personagem: Personagens, especialAtivo = false) {
@@ -14,7 +15,7 @@ export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoe
     const proximaPosicao = getProximaPosicao(direcao, posicaoAtual);
     const caracterDestino = fase.mapa[proximaPosicao.i][proximaPosicao.j];
     
-    if (ehSherlock && ehCaminho(direcao, fase, posicaoAtual)) {
+    if (ehSherlock && ehCaminho(direcao, fase.mapa, posicaoAtual)) {
         let pontuacaoGanha = 2;
         if (direcao !== direcoes.Especial && especialAtivo) {
             manipuladorDeState.atualizarState(Eventos.diminuirTempoEspecial);
@@ -32,22 +33,16 @@ export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoe
                 pontuacaoGanha += 50;
                 manipuladorDeState.atualizarState(Eventos.pegarEspecial);
             }
-            fase.mapa[posicaoAtual.i][posicaoAtual.j] = caracteres.espacoVazio;
-            fase.mapa[proximaPosicao.i][proximaPosicao.j] = caracteres.sherlock;
-            fase.posicaoPersonagens.sherlock = {i: proximaPosicao.i, j: proximaPosicao.j};
+            moverNoMapa(fase, personagem, caracteres.espacoVazio, proximaPosicao);
         }
         manipuladorDeState.atualizarState(Eventos.ganharPontos, pontuacaoGanha);
     } else if (!ehSherlock) {
-        const ninja = caracteres[personagem];
         if (caracterDestino === caracteres.sherlock) {
             manipuladorDeState.atualizarState(Eventos.perder);
-            fase.mapa[posicaoAtual.i][posicaoAtual.j] = caracteres.espacoVazio;
-            fase.mapa[proximaPosicao.i][proximaPosicao.j] = ninja;
             fase.posicaoPersonagens.sherlock = {i: -1, j: -1};
+            moverNoMapa(fase, personagem, caracteres.espacoVazio, proximaPosicao);
         } else {
-            fase.mapa[posicaoAtual.i][posicaoAtual.j] = caracterDestino;
-            fase.mapa[proximaPosicao.i][proximaPosicao.j] = ninja;
+            moverNoMapa(fase, personagem, caracterDestino, proximaPosicao);
         }
-        fase.posicaoPersonagens[personagem] = proximaPosicao;
     }
 }

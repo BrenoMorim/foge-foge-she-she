@@ -22,7 +22,7 @@ export default function movimentarNinjas(fase: IFase, especialAtivo: boolean, ma
     if (ninjasRestantes.length === 0) return;
     const listaDirecoes = [direcoes.Cima, direcoes.Baixo, direcoes.Direita, direcoes.Esquerda];
     ninjasRestantes.forEach(ninja => {
-        const direcoesPossiveis = listaDirecoes.filter(direcao => ehCaminho(direcao, fase, ninja.posicao));
+        const direcoesPossiveis = listaDirecoes.filter(direcao => ehCaminho(direcao, fase.mapa, ninja.posicao));
         const distancias = direcoesPossiveis.map(direcaoPossivel => {
             return {
                 direcao: direcaoPossivel,
