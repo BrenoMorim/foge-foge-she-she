@@ -159,11 +159,11 @@ const fases_disponiveis = [
     },
     {
         id: 2,
-        label: "Nível fácil",
+        label: "Meio fácil",
         mapa: [
             "[-------]".split(""),
-            "|*|*S***|".split(""),
-            "|****|**|".split(""),
+            "|***S***|".split(""),
+            "|*|**|**|".split(""),
             "|*|**|**|".split(""),
             "|*{-E{-*|".split(""),
             "|B*****J|".split(""),
@@ -203,7 +203,7 @@ const fases_disponiveis = [
     },
     {
         id: 5,
-        label: "Nível difícil",
+        label: "Pouquinho difícil",
         mapa: [
             "[--------]".split(""),
             "|B******S|".split(""),
@@ -217,6 +217,59 @@ const fases_disponiveis = [
             "|*{----}*|".split(""),
             "|E*******|".split(""),
             "{--------}".split("")
+        ]
+    },
+    {
+        id: 6,
+        label: "Sorrisinho =)",
+        mapa: [
+            " [------] ".split(""),
+            "[}B****J{]".split(""),
+            "|********|".split(""),
+            "|**|**|**|".split(""),
+            "|**|**|**|".split(""),
+            "|*S****E*|".split(""),
+            "|*|****|*|".split(""),
+            "|*{----}*|".split(""),
+            "|********|".split(""),
+            "{]******[}".split(""),
+            " {------} ".split("")
+        ]
+    },
+    {
+        id: 7,
+        label: "Coelhinho",
+        mapa: [
+            "  []  []  ".split(""),
+            "  ||  ||  ".split(""),
+            " [------] ".split(""),
+            "[}B****J{]".split(""),
+            "|********|".split(""),
+            "|*[]**[]*|".split(""),
+            "|*||**||*|".split(""),
+            "|********|".split(""),
+            "|***{}***|".split(""),
+            "|*--**--*|".split(""),
+            "|S*-**-*E|".split(""),
+            "{]******[}".split(""),
+            " {------} ".split("")
+        ]
+    },
+    {
+        id: 8,
+        label: "Divisão",
+        mapa: [
+            "[-------]".split(""),
+            "|******B|".split(""),
+            "|*[-S-]*|".split(""),
+            "|*|***|*|".split(""),
+            "|*}***{*|".split(""),
+            "|*******|".split(""),
+            "|*]***[*|".split(""),
+            "|*|***|*|".split(""),
+            "|*{-E-}*|".split(""),
+            "|J******|".split(""),
+            "{-------}".split("")
         ]
     }
 ] as IFase[];
