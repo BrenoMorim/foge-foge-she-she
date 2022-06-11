@@ -1,0 +1,15 @@
+@import 'styles/variaveis.scss';
+
+.footer {
+    font-size: 0.8rem;
+    width: 60%;
+    text-align: center;
+    background-color: $roxo;
+    color: $branco;
+    border-radius: 1.2rem;
+    align-self: center;
+    margin-top: 2rem;
+    &__texto {
+        margin: .5rem 0;
+    }
+}

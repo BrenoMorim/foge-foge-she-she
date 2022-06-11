@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Cabecalho from 'components/Cabecalho';
 import Carregando from 'components/Carregando';
+import Footer from 'components/Footer';
 
 const Inicio = lazy(() => import('pages/Inicio'));
 const NotFound = lazy(() => import('pages/NotFound'));
@@ -20,6 +21,7 @@ export default function AppRouter() {
           </Routes>
         </Suspense>
       </main>
+      <Footer/>
     </Router>
   );
 }
