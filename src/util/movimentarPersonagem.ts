@@ -1,5 +1,6 @@
 import { caracteres } from "data/caracteres";
 import Personagens from "data/Personagens";
+import Pontuacao from "data/Pontuacao";
 import {direcoes} from "types/Direcoes";
 import IFase from "types/IFase";
 import ehCaminho from "util/ehCaminho";
@@ -16,21 +17,21 @@ export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoe
     const caracterDestino = fase.mapa[proximaPosicao.i][proximaPosicao.j];
     
     if (ehSherlock && ehCaminho(direcao, fase.mapa, posicaoAtual)) {
-        let pontuacaoGanha = 2;
+        let pontuacaoGanha = Pontuacao.aoSeMover;
         if (direcao !== direcoes.Especial && especialAtivo) {
             manipuladorDeState.diminuirDuracaoEspecial();
         }
         if (direcao === direcoes.Especial && especialAtivo) {
             const ninjasEspantados = usarEspecial(fase, manipuladorDeState);
-            pontuacaoGanha += ninjasEspantados * 100;
+            pontuacaoGanha += ninjasEspantados * Pontuacao.aoEspantarNinja;
             manipuladorDeState.espantarNinjas(ninjasEspantados);
         } else {
             if (caracterDestino === caracteres.racao) {
-                pontuacaoGanha += 10;
+                pontuacaoGanha += Pontuacao.aoComerRacao;
                 manipuladorDeState.comerRacao();
             }
             else if (caracterDestino === caracteres.especial) {
-                pontuacaoGanha += 50;
+                pontuacaoGanha += Pontuacao.aoPegarEspecial;
                 manipuladorDeState.pegarEspecial();
             }
             moverNoMapa(fase, personagem, caracteres.espacoVazio, proximaPosicao);
