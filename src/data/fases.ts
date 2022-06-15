@@ -1,5 +1,4 @@
 import IFase from "types/IFase";
-import getPosicaoPersonagens from "util/getPosicaoPersonagens";
 
 const fases_disponiveis = [
     {
@@ -146,9 +145,5 @@ const fases_disponiveis = [
         ]
     },
 ] as IFase[];
-
-fases_disponiveis.map(f => {
-    f.posicaoPersonagens = getPosicaoPersonagens(f.mapa);
-});
 
 export default fases_disponiveis; 

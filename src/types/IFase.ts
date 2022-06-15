@@ -8,5 +8,12 @@ export default interface IFase {
         breno: IPosicao,
         jaminha: IPosicao
     },
-    mapa: string[][]
+    mapa: string[][],
+    pontuacao: number,
+    racoesFaltando: number,
+    ninjasRestantes: number,
+    especialAtivo: boolean,
+    duracaoEspecial: number,
+    ganhou: boolean,
+    perdeu: boolean
 }

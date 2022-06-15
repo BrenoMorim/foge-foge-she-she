@@ -1,16 +1,15 @@
 import traduzCaracter from "data/traduzCaracter";
-import IFase from "types/IFase";
 import styles from './Mapa.module.scss';
 
 interface Props {
-    fase: IFase
+    mapa: string[][]
 }
 
-export default function Mapa({fase}: Props) {
+export default function Mapa({mapa}: Props) {
     return (
         <table className={styles.container}>
             <tbody className={styles.mapa}>
-            {fase.mapa.map((linha, indexLinha) => {
+            {mapa.map((linha, indexLinha) => {
                 return (
                 <tr key={indexLinha} className={styles.mapa__linha}>
                     {linha.map((pixel, indexPixel) => {

@@ -11,19 +11,11 @@ import { useEffect, useState } from "react";
 
 interface Props {
   faseAtual: IFase;
-  ganhou: boolean;
-  perdeu: boolean;
-  especialAtivo: boolean;
-  duracaoEspecial: number;
   manipuladorDeState: ManipuladorDeState;
 }
 
 export default function MenuComandos({
   faseAtual,
-  ganhou,
-  perdeu,
-  especialAtivo,
-  duracaoEspecial,
   manipuladorDeState
 }: Props) {
 
@@ -35,17 +27,17 @@ export default function MenuComandos({
       direcao,
       manipuladorDeState,
       Personagens.sherlock,
-      especialAtivo
+      faseAtual.especialAtivo
       );
-      movimentarNinjas(faseAtual, especialAtivo, manipuladorDeState);
+      movimentarNinjas(faseAtual, faseAtual.especialAtivo, manipuladorDeState);
       setUltimoComando(!ultimoComando);
     }
 
   useEffect(() => {
-    verificaSeEstaPreso(faseAtual, especialAtivo, manipuladorDeState);
+    verificaSeEstaPreso(faseAtual, faseAtual.especialAtivo, manipuladorDeState);
   }, [ultimoComando]);
   
-  const jogoAcabou = (ganhou || perdeu);
+  const jogoAcabou = (faseAtual.ganhou || faseAtual.perdeu);
 
   return (
     <>
@@ -64,14 +56,14 @@ export default function MenuComandos({
         })}
         <button
           onClick={() => executaComando(direcoes.Especial)}
-          disabled={!especialAtivo || jogoAcabou}
+          disabled={!faseAtual.especialAtivo || jogoAcabou}
           className={styles.comandos__botao}
         >
           <img src="/assets/botoes/especial.svg" alt="Especial"/>
         </button>
       </section>
-      {(especialAtivo && duracaoEspecial > 0) && <p className={styles.descricaoEspecial}>Turnos restantes com especial: {duracaoEspecial}</p>}
-      {(especialAtivo && !jogoAcabou) && <p className={styles.descricaoEspecial}>Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
+      {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className={styles.descricaoEspecial}>Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
+      {(faseAtual.especialAtivo && !jogoAcabou) && <p className={styles.descricaoEspecial}>Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
     </>
   );
 }
