@@ -5,7 +5,6 @@ import IFase from "types/IFase";
 import movimentarPersonagem from "util/movimentarPersonagem";
 import Personagens from "data/Personagens";
 import ManipuladorDeState from "util/ManipuladorDeState";
-import movimentarNinjas from "util/movimentarNinjas";
 import verificaSeEstaPreso from "util/verificaSeEstaPreso";
 import { useEffect, useState } from "react";
 
@@ -29,7 +28,6 @@ export default function MenuComandos({
       Personagens.sherlock,
       faseAtual.especialAtivo
       );
-      movimentarNinjas(faseAtual, faseAtual.especialAtivo, manipuladorDeState);
       setUltimoComando(!ultimoComando);
     }
 
