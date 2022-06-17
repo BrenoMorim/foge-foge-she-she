@@ -1,4 +1,4 @@
-import traduzCaracter from "data/traduzCaracter";
+import traduzCaracter from "util/traduzCaracter";
 import styles from './Mapa.module.scss';
 
 interface Props {

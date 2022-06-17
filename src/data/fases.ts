@@ -144,6 +144,40 @@ const fases_disponiveis = [
             "{--------}".split("")
         ]
     },
+    {
+        id: 10,
+        label: "Perseguição",
+        mapa: [
+            "[-------]".split(""),
+            "|*******|".split(""),
+            "|*[-*-]*|".split(""),
+            "|*|*E*|*|".split(""),
+            "|*|***|*|".split(""),
+            "|*|***|*|".split(""),
+            "|*|***|*|".split(""),
+            "|*|*****|".split(""),
+            "|*{---}*|".split(""),
+            "|**SJ|*B|".split(""),
+            "{-------}".split("")
+        ]
+    },
+    {
+        id: 11,
+        label: "Emparedado",
+        mapa: [
+            "[--------]".split(""),
+            "|******|S|".split(""),
+            "|*[---*}*|".split(""),
+            "|*|******|".split(""),
+            "|***[--]E|".split(""),
+            "|*|*|**|*|".split(""),
+            "|*|******|".split(""),
+            "|*|**--]*|".split(""),
+            "|B{-***|*|".split(""),
+            "|*J******|".split(""),
+            "{--------}".split("")
+        ]
+    },
 ] as IFase[];
 
 export default fases_disponiveis; 

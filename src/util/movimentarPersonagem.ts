@@ -40,9 +40,9 @@ export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoe
         manipuladorDeState.ganharPontos(pontuacaoGanha);
     } else if (!ehSherlock) {
         if (caracterDestino === caracteres.sherlock) {
+            moverNoMapa(fase, personagem, caracteres.espacoVazio, proximaPosicao);
             manipuladorDeState.perder();
             manipuladorDeState.removerPersonagemDoMapa(Personagens.sherlock);
-            moverNoMapa(fase, personagem, caracteres.espacoVazio, proximaPosicao);
         } else {
             moverNoMapa(fase, personagem, caracterDestino, proximaPosicao);
         }

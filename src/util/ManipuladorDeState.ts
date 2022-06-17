@@ -46,7 +46,7 @@ export default class ManipuladorDeState {
     }
 
     public perder() {
-        this.setFase({...this.fase, perdeu: true});
+        this.fase.perdeu = true;
     }
 
     public diminuirDuracaoEspecial() {

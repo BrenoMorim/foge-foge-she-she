@@ -1,4 +1,4 @@
-import { caracteres } from "./caracteres";
+import { caracteres } from "../data/caracteres";
 
 export default function traduzCaracter(char: string) {
     switch (char) {
