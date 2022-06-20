@@ -1,18 +1,30 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import carregaFasePorId from 'util/carregaFasePorId';
+import ManipuladorDeState from 'util/ManipuladorDeState';
 import styles from './TelaFinal.module.scss';
 
 interface Props {
     vitoria: boolean,
-    pontuacaoFinal: number
+    pontuacaoFinal: number,
+    manipuladorDeState: ManipuladorDeState
 }
 
-export default function TelaFinal({vitoria, pontuacaoFinal}: Props) {
+export default function TelaFinal({vitoria, pontuacaoFinal, manipuladorDeState}: Props) {
     const navegar = useNavigate();
+    const params = useParams();
+    const id = Number(params.id);
+    const temProximaFase = carregaFasePorId(id + 1) !== undefined;
     function voltarParaInicio() {
         navegar('/');
     }
     function jogarNovamente() {
         document.location.reload();
+    }
+    function irParaProximaFase() {
+        if (temProximaFase) {
+            manipuladorDeState.carregarFase(id + 1);
+            navegar(`/fase/${id + 1}`);
+        }
     }
     return (
         <section className={styles.telaFinal}>
@@ -22,9 +34,12 @@ export default function TelaFinal({vitoria, pontuacaoFinal}: Props) {
             <button className={styles.telaFinal__botao} onClick={voltarParaInicio}>
                 Voltar para o Início
             </button>
-            <button className={styles.telaFinal__botao} onClick={jogarNovamente}>
-                {vitoria ? 'Jogar novamente' : 'Tentar novamente'}
-            </button>
+            {<button className={styles.telaFinal__botao} onClick={jogarNovamente}>
+                {vitoria ? 'Jogar Novamente' : 'Tentar Novamente'}
+            </button>}
+            {(vitoria && temProximaFase) && <button className={styles.telaFinal__botao} onClick={irParaProximaFase}>
+                Ir para Próxima Fase
+            </button>}
         </section>
     );
 }

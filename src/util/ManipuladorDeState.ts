@@ -1,5 +1,6 @@
 import Personagens from "data/Personagens";
 import IFase from "types/IFase";
+import carregaFasePorId from "./carregaFasePorId";
 
 export default class ManipuladorDeState {
     private fase: IFase;
@@ -47,6 +48,7 @@ export default class ManipuladorDeState {
 
     public perder() {
         this.fase.perdeu = true;
+        this.setFase({...this.fase});
     }
 
     public diminuirDuracaoEspecial() {
@@ -58,5 +60,11 @@ export default class ManipuladorDeState {
 
     public removerPersonagemDoMapa(personagem: Personagens) {
         this.fase.posicaoPersonagens[personagem] = {i: -1, j: -1};
+    }
+
+    public carregarFase(idFase: number) {
+        const faseCarregada = carregaFasePorId(idFase);
+        if (faseCarregada === undefined) return;
+        this.setFase({...faseCarregada});
     }
 }

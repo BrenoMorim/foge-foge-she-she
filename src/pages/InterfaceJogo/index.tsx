@@ -22,7 +22,7 @@ export default function InterfaceJogo() {
 
   return (
     <section>
-      {(jogoAcabou) && <TelaFinal pontuacaoFinal={fase.pontuacao} vitoria={fase.ganhou}/>}
+      {(jogoAcabou) && <TelaFinal manipuladorDeState={manipuladorDeState} pontuacaoFinal={fase.pontuacao} vitoria={fase.ganhou}/>}
       <MenuPontuacao labelFase={fase.label} pontuacao={fase.pontuacao}/>
       <Mapa mapa={fase.mapa}/>
       <MenuComandos manipuladorDeState={manipuladorDeState} faseAtual={fase}/>
