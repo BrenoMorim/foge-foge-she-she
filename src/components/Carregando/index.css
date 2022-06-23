@@ -1,21 +1,21 @@
-@import 'styles/variaveis';
+@import 'styles/_variaveis.css';
 
-.container {
+.carregando__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.titulo {
+.carregando__titulo {
     text-align: center;
     font-size: 2.5rem;
-    color: $roxo;
+    color: var(--roxo);
 }
 
-.loader {
-    border: 16px solid $cinza;
-    border-top: 16px solid $roxo;
+.carregando__loader {
+    border: 16px solid var(--cinza);
+    border-top: 16px solid var(--roxo);
     border-radius: 50%;
     width: 25vw;
     height: 25vw;

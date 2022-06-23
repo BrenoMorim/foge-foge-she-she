@@ -1,0 +1,61 @@
+@import 'styles/_variaveis.css';
+
+.comandos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .comandos {
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        row-gap: 1rem;
+        right: 15vw;
+        bottom: 15vh;
+    }
+}
+
+.comandos__botao {
+    border: .25rem solid var(--preto);
+    border-radius: .25rem;
+    padding: 0;
+    width: 18vw;
+    height: 18vw;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: var(--beje);
+    cursor: pointer;
+    box-shadow: var(--sombra);
+}
+.comandos__botao:disabled {
+    opacity: 0.7;
+    border-color: var(--cinza);
+    cursor: not-allowed;
+}
+.comandos__botao:hover {
+    border-color: var(--roxo);
+}
+.comandos__botao:active {
+    transform: scale(1.1);
+}
+.comandos__botao * {
+    width: 100%;
+    height: 100%;
+}
+
+.comandos__descricao-especial {
+    color: var(--beje);
+    font-size: .9rem;
+    background: var(--fundo-roxo-vidro);
+    border: var(--borda-roxo-vidro);
+    box-shadow: var(--sombra);
+    padding: 1rem;
+    width: 90vw;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 2rem;
+    margin-top: 1.25rem;
+}

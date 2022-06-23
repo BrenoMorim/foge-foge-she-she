@@ -1,0 +1,37 @@
+@import 'styles/_variaveis.css';
+
+.nao-encontrado {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: var(--fundo-roxo-vidro);
+    box-shadow: var(--sombra);
+    border: var(--borda-roxo-bidro);
+    color: var(--beje);
+    width: 80vw;
+    max-width: 700px;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+}
+
+.nao-encontrado__botao {
+    padding: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--roxo);
+    background: var(--fundo-branco-vidro);
+    border-radius: 2rem;
+    box-shadow: var(--sombra);
+    border: var(--borda-branco-vidro);
+}
+.nao-encontrado__botao:hover {
+    border: 2px solid var(--preto);
+    opacity: 0.9;
+}
+.nao-encontrado__botao:active {
+    transform: scale(1.1);
+}

@@ -1,0 +1,16 @@
+:root {
+    --roxo: #5D0D8D;
+    --rosa: #931A96;
+    --cinza: #D9D9D9;
+    --branco: #FEFEFE;
+    --beje: #EBD9AA;
+    --preto: #222222;
+    --amarelo: #FFE603;
+    --marrom: #A66821;
+    --fonte: 'Montserrat Alternates', sans-serif;
+    --fundo-roxo-vidro: rgba(93, 13, 141, 0.72);
+    --borda-roxo-vidro: .1rem solid rgba(93, 13, 141, 0.7);
+    --fundo-branco-vidro: rgba(255, 255, 255, 0.85);
+    --borda-branco-vidro: .1rem solid rgba(255, 255, 255, 1);
+    --sombra: .1rem .1rem 1rem rgba(100, 100, 100, 0.5);
+}

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import styles from './NotFound.module.scss';
+import "./index.css";
 
 export default function NotFound() {
     
@@ -8,10 +8,10 @@ export default function NotFound() {
         navegar(-1);
     }
     return (
-        <section className={styles.naoEncontrado}>
+        <section className="nao-encontrado">
             <h1>Erro 404</h1>
             <h2>Nada foi encontrado =(</h2>
-            <button className={styles.naoEncontrado__botao} onClick={voltar}>Voltar</button>
+            <button className="nao-encontrado__botao" onClick={voltar}>Voltar</button>
         </section>
     );
 }

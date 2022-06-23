@@ -1,4 +1,4 @@
-import styles from './Cabecalho.module.scss';
+import './index.css';
 import { useNavigate } from 'react-router-dom';
 
 export default function Cabecalho() {
@@ -9,8 +9,8 @@ export default function Cabecalho() {
     }
 
     return (
-        <header className={styles.cabecalho} onClick={voltarParaInicio}>
-            <img className={styles.cabecalho__logo} src='/assets/logo.png'/>
+        <header className="cabecalho" onClick={voltarParaInicio}>
+            <img className="cabecalho__logo" src='/assets/logo.png'/>
         </header>
     );
 }

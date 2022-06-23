@@ -1,4 +1,4 @@
-import styles from './MenuPontuacao.module.scss';
+import './index.css';
 
 interface Props {
     labelFase: string,
@@ -8,14 +8,14 @@ interface Props {
 export default function MenuPontuacao({labelFase, pontuacao}: Props) {
     
     return (
-        <section className={styles.menuPontuacao}>
-            <article className={styles.informacoes}>
-                <h2 className={styles.informacoes__subtitulo}>Fase:</h2>
-                <h2 className={styles.informacoes__subtitulo}>{labelFase}</h2>
+        <section className="pontuacao">
+            <article className="pontuacao__informacoes">
+                <h2 className="pontuacao__informacoes__subtitulo">Fase:</h2>
+                <h2 className="pontuacao__informacoes__subtitulo">{labelFase}</h2>
             </article>
-            <article className={styles.informacoes}>
-                <h2 className={styles.informacoes__subtitulo}>Pontuação:</h2>
-                <h2 className={styles.informacoes__subtitulo}>{pontuacao}</h2>
+            <article className="pontuacao__informacoes">
+                <h2 className="pontuacao__informacoes__subtitulo">Pontuação:</h2>
+                <h2 className="pontuacao__informacoes__subtitulo">{pontuacao}</h2>
             </article>
         </section>
     );

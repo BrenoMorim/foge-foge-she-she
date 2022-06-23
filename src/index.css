@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
-@import "styles/variaveis.scss";
+@import 'styles/_variaveis.css';
 
 body {
-  background-color: $beje;
+  background-color: var(--beje);
 }
 
 .container {
@@ -12,9 +12,8 @@ body {
   margin: 0 auto;
   max-width: 850px;
   padding-bottom: 1rem;
-  
-  * {
-    box-sizing: border-box;
-    font-family: 'Montserrat Alternates', sans-serif;
-  }
+}
+.container * {
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
 }

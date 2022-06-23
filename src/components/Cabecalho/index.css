@@ -1,0 +1,16 @@
+.cabecalho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__logo {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    max-width: 500px;
+    width: 70vw;
+}
+.cabecalho__logo:hover {
+    opacity: 0.8;
+}

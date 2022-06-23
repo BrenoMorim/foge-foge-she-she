@@ -1,0 +1,29 @@
+.mapa__container {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+.mapa {
+    width: 100vw;
+    max-width: 1000px;
+}
+
+.mapa__linha {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.mapa__pixel {
+    width: 2.5rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width: 1200px) {
+    .mapa__pixel {
+        width: 3rem;
+    }
+}
+.mapa__pixel img {
+    width: 100%;
+    height: 100%;
+}

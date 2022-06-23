@@ -1,0 +1,43 @@
+@import 'styles/_variaveis.css';
+
+.tela-final {
+    z-index: 2;
+    width: 70vw;
+    height: auto;
+    position: fixed;
+    right: 15vw;
+    top: 20vh;
+    background: var(--fundo-roxo-vidro);
+    border-radius: 3rem;
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
+    border: var(--borda-roxo-vidro);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tela-final__titulo {
+    color: var(--beje);
+    text-align: center;
+}
+.tela-final__botao {
+    padding: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--roxo);
+    background: var(--fundo-branco-vidro);
+    border-radius: 2rem;
+    box-shadow: var(--sombra);
+    border: var(--borda-branco-vidro);
+}
+.tela-final__botao:hover {
+    border: 2px solid var(--preto);
+    opacity: 0.9;
+}
+.tela-final__botao:active {
+    transform: scale(1.1);
+}

@@ -1,5 +1,5 @@
 import traduzCaracter from "util/traduzCaracter";
-import styles from './Mapa.module.scss';
+import './index.css';
 
 interface Props {
     mapa: string[][]
@@ -7,14 +7,14 @@ interface Props {
 
 export default function Mapa({mapa}: Props) {
     return (
-        <table className={styles.container}>
-            <tbody className={styles.mapa}>
+        <table className="mapa__container">
+            <tbody className="mapa">
             {mapa.map((linha, indexLinha) => {
                 return (
-                <tr key={indexLinha} className={styles.mapa__linha}>
+                <tr key={indexLinha} className="mapa__linha">
                     {linha.map((pixel, indexPixel) => {
                     return (
-                        <td className={styles.mapa__pixel} key={indexPixel}>
+                        <td className="mapa__pixel" key={indexPixel}>
                             <img src={`/assets/mapa/${traduzCaracter(pixel)}`} />
                         </td>
                     );

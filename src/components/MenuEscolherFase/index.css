@@ -1,0 +1,44 @@
+@import 'styles/_variaveis.css';
+
+.menu-fases {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    row-gap: .5rem;
+    background: var(--fundo-roxo-vidro);
+    box-shadow: var(--sombra);
+    border: var(--borda-roxo-vidro);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.menu-fases__rotulo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--beje);
+}
+
+.menu-fases__jogar, .menu-fases__fases {
+    color: var(--roxo);
+    background-color: var(--cinza);
+    border: 1px var(--roxo) solid;
+    border-radius: 5px;
+    padding: .5rem 0;
+    text-align: center;
+}
+.menu-fases__jogar:hover, .menu-fases__fases:hover {
+    color: var(--preto);
+    border: .2rem solid var(--preto);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu-fases__jogar:active {
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.menu-fases__jogar:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}

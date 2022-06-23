@@ -1,10 +1,10 @@
-import styles from './Carregando.module.scss';
+import './index.css';
 
 export default function Carregando() {
     return (
-        <section className={styles.container}>
-            <h1 className={styles.titulo}>Carregando</h1>
-            <div className={styles.loader}></div>
+        <section className="carregando__container">
+            <h1 className="carregando__titulo">Carregando</h1>
+            <div className="carregando__loader"></div>
         </section>
     )
 }

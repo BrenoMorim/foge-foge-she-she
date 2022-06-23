@@ -1,4 +1,4 @@
-import styles from "./MenuComandos.module.scss";
+import "./index.css";
 import ehCaminho from "util/ehCaminho";
 import { direcoes, listaDirecoes } from "types/Direcoes";
 import IFase from "types/IFase";
@@ -39,14 +39,14 @@ export default function MenuComandos({
 
   return (
     <>
-      <section className={styles.comandos}>
+      <section className="comandos">
         {listaDirecoes.map((direcao, index) => {
           return (
             <button
               key={index}
               onClick={() => executaComando(direcao)}
               disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
-              className={styles.comandos__botao}
+              className="comandos__botao"
             >
               <img alt={direcao.toString} src={`/assets/botoes/${direcao.toString}.svg`}/>
             </button>
@@ -55,13 +55,13 @@ export default function MenuComandos({
         <button
           onClick={() => executaComando(direcoes.Especial)}
           disabled={!faseAtual.especialAtivo || jogoAcabou}
-          className={styles.comandos__botao}
+          className="comandos__botao"
         >
           <img src="/assets/botoes/especial.svg" alt="Especial"/>
         </button>
       </section>
-      {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className={styles.descricaoEspecial}>Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
-      {(faseAtual.especialAtivo && !jogoAcabou) && <p className={styles.descricaoEspecial}>Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
+      {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className="comandos__descricao-especial">Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
+      {(faseAtual.especialAtivo && !jogoAcabou) && <p className="comandos__descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
     </>
   );
 }

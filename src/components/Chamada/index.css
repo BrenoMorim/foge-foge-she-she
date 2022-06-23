@@ -1,0 +1,31 @@
+@import 'styles/_variaveis.css';
+
+.chamada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: .75rem;
+    color: var(--roxo);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.chamada__titulo {
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+}
+
+.chamada__imagens {
+    display: flex;
+    justify-content: center;
+}
+
+.chamada__imagens__personagem {
+    width: 80px;
+    height: 80px;
+    margin: .2rem;
+    border: 3px solid var(--preto);
+    border-radius: 5px;
+    box-shadow: var(--sombra);
+}

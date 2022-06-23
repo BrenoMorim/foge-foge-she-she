@@ -1,0 +1,18 @@
+@import 'styles/_variaveis.css';
+
+.footer {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 60%;
+    text-align: center;
+    color: var(--branco);
+    border-radius: 1.2rem;
+    align-self: center;
+    margin-top: 2rem;
+    background: var(--fundo-roxo-vidro);
+    box-shadow: var(--sombra);
+    border: var(--borda-roxo-vidro);
+}
+.footer__texto {
+    margin: .5rem 0;
+}
