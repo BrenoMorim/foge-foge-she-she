@@ -22,6 +22,7 @@
         max-height: 100px;
         background-color: $beje;
         cursor: pointer;
+        box-shadow: $sombra;
     }
     &__botao:disabled {
         opacity: 0.7;
@@ -43,13 +44,14 @@
 .descricaoEspecial {
     color: $beje;
     font-size: .9rem;
-    background-color: $roxo;
+    background: $fundoRoxoVidro;
+    border: $bordaRoxoVidro;
+    box-shadow: $sombra;
     padding: 1rem;
     width: 90vw;
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
-    border: .25rem solid $roxo;
     border-radius: 2rem;
     margin-top: 1.25rem;
 }

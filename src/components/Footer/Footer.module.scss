@@ -2,13 +2,18 @@
 
 .footer {
     font-size: 0.8rem;
+    font-weight: 500;
     width: 60%;
     text-align: center;
-    background-color: $roxo;
     color: $branco;
     border-radius: 1.2rem;
     align-self: center;
     margin-top: 2rem;
+    background: $fundoRoxoVidro;
+    box-shadow: $sombra;
+    backdrop-filter: blur(16.2px);
+    -webkit-backdrop-filter: blur(16.2px);
+    border: $bordaRoxoVidro;
     &__texto {
         margin: .5rem 0;
     }
