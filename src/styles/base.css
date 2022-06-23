@@ -20,7 +20,7 @@
     border: var(--borda-branco-vidro);
     box-shadow: var(--sombra);
     color: var(--roxo);
-    padding: 1rem;
+    padding: .6rem;
 }
 
 .base__botao {

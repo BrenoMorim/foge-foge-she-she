@@ -49,7 +49,7 @@ export default function MenuComandos({
               disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
               className="comandos__botao"
             >
-              <img alt={direcao.toString} src={`/assets/botoes/${direcao.toString}.svg`}/>
+              <img alt={direcao.toString} src={"/assets/botoes/seta.svg"} className={`comandos__botao--${direcao.toString}`}/>
             </button>
           );
         })}

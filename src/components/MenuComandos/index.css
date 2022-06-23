@@ -44,7 +44,6 @@
     width: 100%;
     height: 100%;
 }
-
 .comandos__descricao-especial {
     font-size: .9rem;
     width: 90vw;
@@ -53,4 +52,17 @@
     margin: 0 auto;
     border-radius: 1.5rem;
     margin-top: 1.25rem;
+}
+
+.comandos__botao--cima {
+    transform: rotate(0deg);
+}
+.comandos__botao--baixo {
+    transform: rotate(180deg);
+}
+.comandos__botao--direita {
+    transform: rotate(90deg);
+}
+.comandos__botao--esquerda {
+    transform: rotate(-90deg);
 }

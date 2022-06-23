@@ -18,7 +18,7 @@
     border-radius: .5rem;
     margin: .25rem .5rem;
     text-align: center;
-    font-size: 1.05rem;
+    font-size: .9rem;
 }
 .menu-fases__fases:hover {
     color: var(--preto);
