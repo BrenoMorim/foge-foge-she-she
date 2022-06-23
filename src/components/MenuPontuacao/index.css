@@ -5,16 +5,11 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: var(--beje);
-    background: var(--fundo-roxo-vidro);
-    border: var(--borda-roxo-vidro);
-    box-shadow: var(--sombra);
     font-weight: bold;
-    border-radius: .5rem;
-    padding: .5rem;
     width: 70vw;
     max-width: 800px;
     margin: 0 auto;
+    border-radius: .75rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -29,14 +24,7 @@
     }
 }
 
-.pontuacao__informacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 1rem;
-}
-
-.pontuacao__informacoes__subtitulo {
+.pontuacao__subtitulo {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;

@@ -1,9 +1,6 @@
 @import 'styles/_variaveis.css';
 
 .carregando__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
 }
 

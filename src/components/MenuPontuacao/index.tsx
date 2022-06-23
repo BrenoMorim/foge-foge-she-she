@@ -8,14 +8,14 @@ interface Props {
 export default function MenuPontuacao({labelFase, pontuacao}: Props) {
     
     return (
-        <section className="pontuacao">
-            <article className="pontuacao__informacoes">
-                <h2 className="pontuacao__informacoes__subtitulo">Fase:</h2>
-                <h2 className="pontuacao__informacoes__subtitulo">{labelFase}</h2>
+        <section className="pontuacao base__painel-roxo">
+            <article className="base__flex-container">
+                <h2 className="pontuacao__subtitulo">Fase:</h2>
+                <h2 className="pontuacao__subtitulo">{labelFase}</h2>
             </article>
-            <article className="pontuacao__informacoes">
-                <h2 className="pontuacao__informacoes__subtitulo">Pontuação:</h2>
-                <h2 className="pontuacao__informacoes__subtitulo">{pontuacao}</h2>
+            <article className="base__flex-container">
+                <h2 className="pontuacao__subtitulo">Pontuação:</h2>
+                <h2 className="pontuacao__subtitulo">{pontuacao}</h2>
             </article>
         </section>
     );

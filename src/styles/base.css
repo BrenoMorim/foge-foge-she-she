@@ -1,0 +1,47 @@
+@import './_variaveis.css';
+
+.base__flex-container {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.base__painel-roxo {
+    background: var(--fundo-roxo-vidro);
+    box-shadow: var(--sombra);
+    border: var(--borda-roxo-bidro);
+    color: var(--beje);
+    padding: 1rem;
+}
+
+.base__painel-branco {
+    background: var(--fundo-branco-vidro);
+    border: var(--borda-branco-vidro);
+    box-shadow: var(--sombra);
+    color: var(--roxo);
+    padding: 1rem;
+}
+
+.base__botao {
+    padding: 1rem;
+    margin: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--roxo);
+    background: var(--fundo-branco-vidro);
+    border-radius: 2rem;
+    box-shadow: var(--sombra);
+    border: var(--borda-branco-vidro);
+}
+.base__botao:hover {
+    border: 2px solid var(--preto);
+    opacity: 0.9;
+}
+.base__botao:active {
+    transform: scale(1.1);
+}
+.base__botao:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}

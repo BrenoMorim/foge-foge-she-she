@@ -1,10 +1,7 @@
 @import 'styles/_variaveis.css';
 
 .chamada {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: .75rem;
     color: var(--roxo);
     font-size: 1.2rem;

@@ -46,16 +46,11 @@
 }
 
 .comandos__descricao-especial {
-    color: var(--beje);
     font-size: .9rem;
-    background: var(--fundo-roxo-vidro);
-    border: var(--borda-roxo-vidro);
-    box-shadow: var(--sombra);
-    padding: 1rem;
     width: 90vw;
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     margin-top: 1.25rem;
 }
