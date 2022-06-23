@@ -27,13 +27,10 @@
         cursor: pointer;
         font-weight: bold;
         color: $roxo;
-        /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.85);
+        background: $fundoBrancoVidro;
         border-radius: 2rem;
-        box-shadow: .3rem .2rem 30px rgba(50, 50, 50, 0.5);
-        backdrop-filter: blur(16.6px);
-        -webkit-backdrop-filter: blur(16.6px);
-        border: 1px solid rgba(255, 255, 255, 1);
+        box-shadow: $sombra;
+        border: $bordaBrancoVidro;
     }
     &__botao:hover {
         border: 2px solid $preto;

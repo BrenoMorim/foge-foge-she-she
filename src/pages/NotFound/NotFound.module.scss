@@ -6,7 +6,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    background-color: $roxo;
+    background: $fundoRoxoVidro;
+    box-shadow: $sombra;
+    border: $bordaRoxoVidro;
     color: $beje;
     width: 80vw;
     max-width: 700px;
@@ -15,14 +17,21 @@
     border-radius: 3rem;
     
     &__botao {
-        background-color: $cinza;
-        border-radius: 1.25rem;
         padding: 1rem;
-        color: $roxo;
-        font-size: 1.5rem;
+        margin: .5rem;
         cursor: pointer;
+        font-weight: bold;
+        color: $roxo;
+        background: $fundoBrancoVidro;
+        border-radius: 2rem;
+        box-shadow: $sombra;
+        border: $bordaBrancoVidro;
     }
     &__botao:hover {
-        opacity: 0.8;
+        border: 2px solid $preto;
+        opacity: 0.9;
+    }
+    &__botao:active {
+        transform: scale(1.1);
     }
 }
