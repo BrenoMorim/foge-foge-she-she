@@ -11,11 +11,15 @@
 }
 
 .carregando__loader {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
     border: 16px solid var(--cinza);
     border-top: 16px solid var(--roxo);
     border-radius: 50%;
     width: 25vw;
     height: 25vw;
+    max-width: 120px;
+    max-height: 120px;
     animation: spin 2s linear infinite;
 }
   
