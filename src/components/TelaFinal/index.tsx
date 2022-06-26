@@ -29,9 +29,9 @@ export default function TelaFinal({vitoria, pontuacaoFinal, manipuladorDeState}:
     }
     return (
         <section className="tela-final base__flex-container base__painel-roxo">
-            <h1>{vitoria ? 'Parabéns! Você ganhou =)' : 'Que pena! Você perdeu =('}</h1>
+            <h1 className="base__titulo">{vitoria ? 'Parabéns! Você ganhou =)' : 'Que pena! Você perdeu =('}</h1>
             {pontuacaoFinal !== 0 && 
-            <h2>Pontuação final: {pontuacaoFinal}</h2>}
+            <h2 className="base__subtitulo">Pontuação final: {pontuacaoFinal}</h2>}
             <button className="base__botao" onClick={voltarParaInicio}>
                 Voltar para o Início
             </button>
