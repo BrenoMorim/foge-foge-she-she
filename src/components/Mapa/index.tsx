@@ -12,10 +12,11 @@ export default function Mapa({mapa}: Props) {
             {mapa.map((linha, indexLinha) => {
                 return (
                 <tr key={indexLinha} className="mapa__linha">
-                    {linha.map((pixel, indexPixel) => {
+                    {linha.map((caracter, indexCaracter) => {
+                        const pixel = traduzCaracter(caracter);
                     return (
-                        <td className="mapa__pixel" key={indexPixel}>
-                            <img src={`/assets/mapa/${traduzCaracter(pixel)}`} />
+                        <td className="mapa__pixel" key={indexCaracter}>
+                            <img src={`/assets/mapa/${pixel.imagem}`} className={`pixel__${pixel.classe}`}/>
                         </td>
                     );
                     })}

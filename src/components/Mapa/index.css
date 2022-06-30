@@ -32,3 +32,15 @@
     width: 100%;
     height: 100%;
 }
+.pixel__parede-horizontal {
+    transform: rotate(90deg);
+}
+.pixel__canto-superior-direito {
+    transform: rotate(90deg);
+}
+.pixel__canto-inferior-esquerdo {
+    transform: rotate(-90deg);
+}
+.pixel__canto-inferior-direito {
+    transform: rotate(180deg);
+}
