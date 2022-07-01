@@ -10,6 +10,12 @@ import moverNoMapa from "./moverNoMapa";
 import movimentarNinjas from "./movimentarNinjas";
 import usarEspecial from "./usarEspecial";
 
+/**
+ * Cuida da movimentação dos personagens e seus diferentes efeitos,
+ * como ganhar pontos, perder, etc. Verifica quais personagens estão sendo
+ * movimentados e toma decisões diferentes baseado nisso. 
+ */
+
 export default function movimentarPersonagem(fase:IFase, direcao: typeof direcoes.Cima, manipuladorDeState: ManipuladorDeState, personagem: Personagens, especialAtivo = false) {
     const ehSherlock = personagem === Personagens.sherlock;
     const posicaoAtual = fase.posicaoPersonagens[personagem];

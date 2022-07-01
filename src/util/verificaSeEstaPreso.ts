@@ -3,6 +3,12 @@ import ehCaminho from "./ehCaminho";
 import { listaDirecoes } from "types/Direcoes";
 import ManipuladorDeState from "./ManipuladorDeState";
 
+/**
+ * Verifica se o sherlock está preso, cercado pelos ninjas. Se não houver
+ * nenhuma direção onde é possível se mover, é chamado o método perder
+ * do ManipuladorDeState.
+ */
+
 export default function verificaSeEstaPreso(faseAtual: IFase, especialAtivo: boolean, manipuladorDeState: ManipuladorDeState) {
     let estaPreso = true;
     if (especialAtivo) {

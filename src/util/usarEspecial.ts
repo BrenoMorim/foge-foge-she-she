@@ -4,6 +4,15 @@ import IFase from "types/IFase";
 import calculaDistancia from "./calculaDistancia";
 import ManipuladorDeState from "./ManipuladorDeState";
 
+/**
+ * Usa o especial, fazendo as chamadas dos métodos no ManipuladorDeState
+ * para alterar o que for necessário no estado da fase atual,
+ * ninjas a uma distância do sherlock menor ou igual a dois são espantados,
+ * sendo apagados do mapa.  
+ * 
+ * @returns quantidade de ninjas espantados
+ */
+
 export default function usarEspecial(fase: IFase, manipuladorDeState: ManipuladorDeState) {
     const posicaoSherlock = fase.posicaoPersonagens.sherlock;
     const ninjas = [Personagens.breno, Personagens.jaminha];

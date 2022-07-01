@@ -1,6 +1,14 @@
 import { caracteres } from "data/caracteres";
 import IPosicao from "types/IPosicao";
 
+/**
+ * Busca os personagens no mapa, iteração feita sempre que a fase é 
+ * carregada, salva a posição inicial deles.
+ * 
+ * @param mapa mapa na forma de matriz de string
+ * @returns objeto com a posição inicial dos personagens
+ */
+
 export default function getPosicaoPersonagens(mapa: string[][]) {
     const posicaoPersonagens = {
         sherlock: {i: -1, j: -1} as IPosicao,

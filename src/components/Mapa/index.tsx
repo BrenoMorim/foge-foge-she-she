@@ -16,7 +16,7 @@ export default function Mapa({mapa}: Props) {
                         const pixel = traduzCaracter(caracter);
                     return (
                         <td className="mapa__pixel" key={indexCaracter}>
-                            <img src={`/assets/mapa/${pixel.imagem}`} className={`pixel__${pixel.classe}`}/>
+                            <img src={`/assets/mapa/${pixel.imagem}`} alt={pixel.imagem.slice(0, -4)} className={`pixel__${pixel.classe}`}/>
                         </td>
                     );
                     })}

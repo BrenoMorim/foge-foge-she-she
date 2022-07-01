@@ -1,3 +1,5 @@
+@import 'styles/_variaveis.css';
+
 .mapa__container {
     margin: 0 auto;
     margin-top: 1.5rem;
@@ -31,6 +33,9 @@
 .mapa__pixel img {
     width: 100%;
     height: 100%;
+}
+.pixel__personagem {
+    border-radius: 25%;
 }
 .pixel__parede-horizontal {
     transform: rotate(90deg);

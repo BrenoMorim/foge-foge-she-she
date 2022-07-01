@@ -7,6 +7,14 @@ import getProximaPosicao from "./getProximaPosicao";
 import ManipuladorDeState from "./ManipuladorDeState";
 import movimentarPersonagem from "./movimentarPersonagem";
 
+/**
+ * Escolhe qual será a direção na qual o ninja vai se movimentar e faz a chamada do
+ * método movimentarPersonagem passando os ninjas por parâmetro.
+ * 
+ * Se o personagem principal está com o especial ativo, os ninjas se afastam dele, caso
+ * contrário eles vão se aproximar.
+ */
+
 export default function movimentarNinjas(fase: IFase, especialAtivo: boolean, manipuladorDeState: ManipuladorDeState) {
     const ninjas = [
         {
