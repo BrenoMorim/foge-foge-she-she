@@ -146,7 +146,7 @@ const fases_disponiveis = [
     },
     {
         id: 10,
-        label: "Perseguição",
+        label: "Colado",
         mapa: [
             "[-------]".split(""),
             "|*******|".split(""),
@@ -174,6 +174,23 @@ const fases_disponiveis = [
             "|*|******|".split(""),
             "|*|**--]*|".split(""),
             "|B{-***|*|".split(""),
+            "|*J******|".split(""),
+            "{--------}".split("")
+        ]
+    },
+    {
+        id: 12,
+        label: "Espiral",
+        mapa: [
+            "[--------]".split(""),
+            "|*******S|".split(""),
+            "|*[----]*|".split(""),
+            "|*|******|".split(""),
+            "|*|*[--]*|".split(""),
+            "|*|*|E*|*|".split(""),
+            "|*|*{-*|*|".split(""),
+            "|*|****|*|".split(""),
+            "|B{----}*|".split(""),
             "|*J******|".split(""),
             "{--------}".split("")
         ]

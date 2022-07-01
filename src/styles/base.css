@@ -10,7 +10,7 @@
 .base__painel-roxo {
     background: var(--fundo-roxo-vidro);
     box-shadow: var(--sombra);
-    border: var(--borda-roxo-bidro);
+    border: var(--borda-roxo-vidro);
     color: var(--beje);
     padding: 1rem;
 }

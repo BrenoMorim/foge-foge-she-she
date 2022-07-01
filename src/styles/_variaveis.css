@@ -8,9 +8,9 @@
     --amarelo: #FFE603;
     --marrom: #A66821;
     --fonte: 'Montserrat Alternates', sans-serif;
-    --fundo-roxo-vidro: rgba(93, 13, 141, 0.72);
+    --fundo-roxo-vidro: rgba(93, 13, 141, 0.68);
     --borda-roxo-vidro: .1rem solid rgba(93, 13, 141, 0.7);
-    --fundo-branco-vidro: rgba(255, 255, 255, 0.85);
+    --fundo-branco-vidro: rgba(255, 255, 255, 0.8);
     --borda-branco-vidro: .1rem solid rgba(255, 255, 255, 1);
     --sombra: .2rem .2rem 1rem rgba(100, 100, 100, 0.75);
 }
