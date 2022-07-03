@@ -214,7 +214,7 @@ const fases_disponiveis = [
             "|E[--]E|".split(""),
             "|*{--}*|".split(""),
             "|J*****|".split(""),
-            "{------} ".split("")
+            "{------}".split("")
         ]
     },
     {
