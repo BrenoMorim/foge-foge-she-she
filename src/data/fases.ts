@@ -195,6 +195,45 @@ const fases_disponiveis = [
             "{--------}".split("")
         ]
     },
+    {
+        id: 13,
+        label: "Pilha",
+        mapa: [
+            "   []   ".split(""),
+            "[------]".split(""),
+            "|S*****|".split(""),
+            "|**[]**|".split(""),
+            "|E[}{]E|".split(""),
+            "|*{][}*|".split(""),
+            "|**{}**|".split(""),
+            "|******|".split(""),
+            "|-E--E-|".split(""),
+            "|******|".split(""),
+            "|******|".split(""),
+            "|*****B|".split(""),
+            "|E[--]E|".split(""),
+            "|*{--}*|".split(""),
+            "|J*****|".split(""),
+            "{------} ".split("")
+        ]
+    },
+    {
+        id: 14,
+        label: "Rosquinha",
+        mapa: [
+            " [------] ".split(""),
+            "[}******{]".split(""),
+            "|**[--]**|".split(""),
+            "|*[}S*{]*|".split(""),
+            "|*|E**E|*|".split(""),
+            "|J|E**E|B|".split(""),
+            "|*|E**E|*|".split(""),
+            "|*{]**[}*|".split(""),
+            "|**{--}**|".split(""),
+            "{]******[}".split(""),
+            " {------} ".split("")
+        ]
+    },
 ] as IFase[];
 
 export default fases_disponiveis; 
