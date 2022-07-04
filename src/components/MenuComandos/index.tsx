@@ -49,7 +49,7 @@ export default function MenuComandos({
               disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
               className="comandos__botao"
             >
-              <img alt={direcao.toString} src={"/assets/botoes/seta.svg"} className={`comandos__botao--${direcao.toString}`}/>
+              <img alt={direcao.toString} src={"/assets/botoes/seta.svg"} className={`botao__imagem botao__imagem--${direcao.toString}`}/>
             </button>
           );
         })}
@@ -58,7 +58,7 @@ export default function MenuComandos({
           disabled={!faseAtual.especialAtivo || jogoAcabou}
           className="comandos__botao"
         >
-          <img src="/assets/botoes/especial.svg" alt="Especial"/>
+          <img src="/assets/botoes/especial.svg" alt="Especial" className="botao__imagem"/>
         </button>
       </section>
       {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className="base__painel-roxo comandos__descricao-especial">Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
