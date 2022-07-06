@@ -1,0 +1,330 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A página inicial deve ser renderizada corretamente 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section>
+        <form
+          class="menu-fases base__painel-roxo base__flex-container"
+        >
+          <label
+            class="menu-fases__rotulo"
+            for="fases"
+          >
+            Escolha uma fase:
+          </label>
+          <select
+            class="menu-fases__fases base__painel-branco"
+            id="fases"
+            name="fases"
+            required=""
+          >
+            <option
+              disabled=""
+              selected=""
+              value="1"
+            >
+              Fases disponíveis:
+            </option>
+            <option
+              value="1"
+            >
+              Tutorial
+            </option>
+            <option
+              value="2"
+            >
+              Meio fácil
+            </option>
+            <option
+              value="3"
+            >
+              Mais ou menos
+            </option>
+            <option
+              value="4"
+            >
+              Nível médio
+            </option>
+            <option
+              value="5"
+            >
+              Pouquinho difícil
+            </option>
+            <option
+              value="6"
+            >
+              Sorrisinho =)
+            </option>
+            <option
+              value="7"
+            >
+              Coelhinho
+            </option>
+            <option
+              value="8"
+            >
+              Divisão
+            </option>
+            <option
+              value="9"
+            >
+              Labirinto
+            </option>
+            <option
+              value="10"
+            >
+              Colado
+            </option>
+            <option
+              value="11"
+            >
+              Emparedado
+            </option>
+            <option
+              value="12"
+            >
+              Espiral
+            </option>
+            <option
+              value="13"
+            >
+              Pilha
+            </option>
+            <option
+              value="14"
+            >
+              Rosquinha
+            </option>
+          </select>
+          <button
+            class="base__botao"
+            disabled=""
+            role="button"
+            type="submit"
+          >
+            Jogar
+          </button>
+        </form>
+        <section
+          class="chamada base__flex-container"
+          data-testid="chamada"
+        >
+          <h3
+            class="chamada__titulo"
+          >
+            Ajude o Sherlock a fugir do breno e da jaminha ninjas!
+          </h3>
+          <div
+            class="chamada__imagens"
+          >
+            <img
+              alt="Breno ninja"
+              class="chamada__imagens__personagem"
+              src="assets/mapa/breno.png"
+            />
+            <img
+              alt="Jaminha ninja"
+              class="chamada__imagens__personagem"
+              src="assets/mapa/jaminha.png"
+            />
+          </div>
+          <h3
+            class="chamada__titulo"
+          >
+            Ele precisa comer todas as rações ou espantar todos os ninjas com suas garras!
+          </h3>
+        </section>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section>
+      <form
+        class="menu-fases base__painel-roxo base__flex-container"
+      >
+        <label
+          class="menu-fases__rotulo"
+          for="fases"
+        >
+          Escolha uma fase:
+        </label>
+        <select
+          class="menu-fases__fases base__painel-branco"
+          id="fases"
+          name="fases"
+          required=""
+        >
+          <option
+            disabled=""
+            selected=""
+            value="1"
+          >
+            Fases disponíveis:
+          </option>
+          <option
+            value="1"
+          >
+            Tutorial
+          </option>
+          <option
+            value="2"
+          >
+            Meio fácil
+          </option>
+          <option
+            value="3"
+          >
+            Mais ou menos
+          </option>
+          <option
+            value="4"
+          >
+            Nível médio
+          </option>
+          <option
+            value="5"
+          >
+            Pouquinho difícil
+          </option>
+          <option
+            value="6"
+          >
+            Sorrisinho =)
+          </option>
+          <option
+            value="7"
+          >
+            Coelhinho
+          </option>
+          <option
+            value="8"
+          >
+            Divisão
+          </option>
+          <option
+            value="9"
+          >
+            Labirinto
+          </option>
+          <option
+            value="10"
+          >
+            Colado
+          </option>
+          <option
+            value="11"
+          >
+            Emparedado
+          </option>
+          <option
+            value="12"
+          >
+            Espiral
+          </option>
+          <option
+            value="13"
+          >
+            Pilha
+          </option>
+          <option
+            value="14"
+          >
+            Rosquinha
+          </option>
+        </select>
+        <button
+          class="base__botao"
+          disabled=""
+          role="button"
+          type="submit"
+        >
+          Jogar
+        </button>
+      </form>
+      <section
+        class="chamada base__flex-container"
+        data-testid="chamada"
+      >
+        <h3
+          class="chamada__titulo"
+        >
+          Ajude o Sherlock a fugir do breno e da jaminha ninjas!
+        </h3>
+        <div
+          class="chamada__imagens"
+        >
+          <img
+            alt="Breno ninja"
+            class="chamada__imagens__personagem"
+            src="assets/mapa/breno.png"
+          />
+          <img
+            alt="Jaminha ninja"
+            class="chamada__imagens__personagem"
+            src="assets/mapa/jaminha.png"
+          />
+        </div>
+        <h3
+          class="chamada__titulo"
+        >
+          Ele precisa comer todas as rações ou espantar todos os ninjas com suas garras!
+        </h3>
+      </section>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

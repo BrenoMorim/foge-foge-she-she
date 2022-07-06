@@ -19,7 +19,7 @@ export default function TelaFinal({vitoria, pontuacaoFinal, manipuladorDeState}:
         navegar('/');
     }
     function jogarNovamente() {
-        document.location.reload();
+        manipuladorDeState.carregarFase(id);
     }
     function irParaProximaFase() {
         if (temProximaFase) {

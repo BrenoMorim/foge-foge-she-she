@@ -25,5 +25,5 @@ export default function carregaFasePorId(id: number) {
     fase.ninjasRestantes = contaNinjasFaltando(fase.mapa);
     fase.perdeu = fase.posicaoPersonagens.sherlock.i === -1;
     fase.ganhou = (fase.ninjasRestantes === 0 || fase.racoesFaltando === 0);
-    return fase;
+    return JSON.parse(JSON.stringify(fase));
 }

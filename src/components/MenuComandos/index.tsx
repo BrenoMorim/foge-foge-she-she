@@ -48,6 +48,7 @@ export default function MenuComandos({
               onClick={() => executaComando(direcao)}
               disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
               className="comandos__botao"
+              data-testid={direcao.toString}
             >
               <img alt={direcao.toString} src={"/assets/botoes/seta.svg"} className={`botao__imagem botao__imagem--${direcao.toString}`}/>
             </button>
@@ -57,12 +58,13 @@ export default function MenuComandos({
           onClick={() => executaComando(direcoes.Especial)}
           disabled={!faseAtual.especialAtivo || jogoAcabou}
           className="comandos__botao"
+          data-testid="especial"
         >
           <img src="/assets/botoes/especial.svg" alt="Especial" className="botao__imagem"/>
         </button>
       </section>
       {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className="base__painel-roxo comandos__descricao-especial">Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
-      {(faseAtual.especialAtivo && !jogoAcabou) && <p className="base__painel-roxo comandos__descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
+      {(faseAtual.especialAtivo && !jogoAcabou) && <p className="base__painel-roxo comandos__descricao-especial" data-testid="descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
     </>
   );
 }
