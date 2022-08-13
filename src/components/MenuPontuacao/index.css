@@ -2,7 +2,7 @@
 
 .pontuacao {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
@@ -10,6 +10,7 @@
     max-width: 800px;
     margin: 0 auto;
     border-radius: .75rem;
+    z-index: 1;
 }
 .pontuacao__titulo, .pontuacao__subtitulo {
     text-align: center;
@@ -20,6 +21,7 @@
 }
 .pontuacao__subtitulo {
     font-weight: 400;
+    color: var(--beje);
 }
 .pontuacao__titulo {
     font-weight: 600;
@@ -29,7 +31,7 @@
     .pontuacao {
         flex-direction: column;
         position: fixed;
-        left: 6vw;
+        left: 3rem;
         bottom: 40vh;
         width: auto;
         row-gap: 2rem;
