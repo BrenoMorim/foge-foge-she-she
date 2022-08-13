@@ -13,30 +13,30 @@ Object {
             class="base__flex-container"
           >
             <h2
-              class="pontuacao__subtitulo"
+              class="pontuacao__titulo"
             >
-              Fase:
-            </h2>
-            <h2
-              class="pontuacao__subtitulo"
-              data-testid="fase-label"
-            >
-              Tutorial
+              Fase: 
+              <span
+                class="pontuacao__subtitulo"
+                data-testid="fase-label"
+              >
+                Tutorial
+              </span>
             </h2>
           </article>
           <article
             class="base__flex-container"
           >
             <h2
-              class="pontuacao__subtitulo"
+              class="pontuacao__titulo"
             >
-              Pontuação:
-            </h2>
-            <h2
-              class="pontuacao__subtitulo"
-              data-testid="fase-pontuacao"
-            >
-              0
+              Pontuação: 
+              <span
+                class="pontuacao__subtitulo"
+                data-testid="fase-pontuacao"
+              >
+                0
+              </span>
             </h2>
           </article>
         </section>
@@ -458,30 +458,30 @@ Object {
           class="base__flex-container"
         >
           <h2
-            class="pontuacao__subtitulo"
+            class="pontuacao__titulo"
           >
-            Fase:
-          </h2>
-          <h2
-            class="pontuacao__subtitulo"
-            data-testid="fase-label"
-          >
-            Tutorial
+            Fase: 
+            <span
+              class="pontuacao__subtitulo"
+              data-testid="fase-label"
+            >
+              Tutorial
+            </span>
           </h2>
         </article>
         <article
           class="base__flex-container"
         >
           <h2
-            class="pontuacao__subtitulo"
+            class="pontuacao__titulo"
           >
-            Pontuação:
-          </h2>
-          <h2
-            class="pontuacao__subtitulo"
-            data-testid="fase-pontuacao"
-          >
-            0
+            Pontuação: 
+            <span
+              class="pontuacao__subtitulo"
+              data-testid="fase-pontuacao"
+            >
+              0
+            </span>
           </h2>
         </article>
       </section>
