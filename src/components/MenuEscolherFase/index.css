@@ -2,8 +2,8 @@
 
 .menu-fases {
     margin: 0 auto;
-    width: 60vw;
-    max-width: 700px;
+    width: 70vw;
+    max-width: 800px;
     row-gap: .5rem;
     border-radius: .5rem;
 }
@@ -15,7 +15,6 @@
     font-weight: 600;
     line-height: 1.5rem;
 }
-
 .menu-fases__fases {
     border-radius: .5rem;
     margin: .25rem .5rem;
@@ -27,7 +26,13 @@
     border: .2rem solid var(--preto);
     cursor: pointer;
 }
-.menu-fases__jogar:active {
-    transform: scale(1.1);
-    font-weight: bold;
+@media screen and (min-width: 1240px) {
+    .menu-fases__rotulo {
+        font-size: 1.75rem;
+        margin-bottom: .5rem;
+        line-height: 2rem;
+    }
+    .menu-fases__fases {
+        font-size: 1.2rem;
+    }
 }

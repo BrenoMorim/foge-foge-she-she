@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .base__painel-roxo {
     background: var(--fundo-roxo-vidro);
     box-shadow: var(--sombra);
@@ -14,7 +13,6 @@
     color: var(--beje);
     padding: 1rem;
 }
-
 .base__painel-branco {
     background: var(--fundo-branco-vidro);
     border: var(--borda-branco-vidro);
@@ -22,7 +20,6 @@
     color: var(--roxo);
     padding: .6rem;
 }
-
 .base__botao {
     padding: 1rem;
     margin: .5rem;
@@ -33,6 +30,8 @@
     border-radius: 2rem;
     box-shadow: var(--sombra);
     border: var(--borda-branco-vidro);
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 .base__botao:hover {
     border: 2px solid var(--preto);
@@ -56,4 +55,22 @@
     margin-bottom: .75rem;
     line-height: 2.25rem;
     font-weight: 500;
+}
+@media screen and (min-width: 1240px) {
+    .base__botao {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+    .base__titulo {
+        font-size: 2.5rem;
+        margin-top: .75rem;
+        margin-bottom: 1.2rem;
+        line-height: 2.75rem;
+    }
+    .base__subtitulo {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+    }
 }

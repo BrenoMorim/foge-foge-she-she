@@ -5,7 +5,6 @@
 body {
   background-color: var(--beje);
 }
-
 .container {
   display: flex;
   flex-direction: column;
@@ -17,4 +16,17 @@ body {
 .container * {
   box-sizing: border-box;
   font-family: 'DynaPuff', cursive;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--roxo) transparent;
+}
+*::-webkit-scrollbar {
+  width: 12px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--roxo);
 }
