@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
 @import 'reset.css';
 @import 'styles/_variaveis.css';
 
@@ -16,5 +16,5 @@ body {
 }
 .container * {
   box-sizing: border-box;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'DynaPuff', cursive;
 }

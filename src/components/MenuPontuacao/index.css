@@ -11,22 +11,32 @@
     margin: 0 auto;
     border-radius: .75rem;
 }
-
-@media screen and (min-width: 1200px) {
-    .pontuacao {
-        flex-direction: column;
-        position: fixed;
-        left: 10vw;
-        bottom: 40vh;
-        width: auto;
-        row-gap: 2rem;
-        padding: 1.2rem;
-    }
-}
-
-.pontuacao__subtitulo {
+.pontuacao__titulo, .pontuacao__subtitulo {
     text-align: center;
     font-size: 1.2rem;
     margin: 0;
     padding: .25rem;
+    line-height: 1.5rem;
+}
+.pontuacao__subtitulo {
+    font-weight: 400;
+}
+.pontuacao__titulo {
+    font-weight: 600;
+    color: var(--branco);
+}
+@media screen and (min-width: 1200px) {
+    .pontuacao {
+        flex-direction: column;
+        position: fixed;
+        left: 6vw;
+        bottom: 40vh;
+        width: auto;
+        row-gap: 2rem;
+        padding: 2rem;
+    }
+    .pontuacao__titulo, .pontuacao__subtitulo {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
 }

@@ -11,6 +11,9 @@
 .chamada__titulo {
     margin-top: .75rem;
     margin-bottom: .75rem;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-weight: 400;
 }
 
 .chamada__imagens {

@@ -12,6 +12,8 @@
     font-size: 1.25rem;
     color: var(--beje);
     margin-bottom: .25rem;
+    font-weight: 600;
+    line-height: 1.5rem;
 }
 
 .menu-fases__fases {

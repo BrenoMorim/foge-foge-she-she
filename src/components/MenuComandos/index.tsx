@@ -64,7 +64,7 @@ export default function MenuComandos({
         </button>
       </section>
       {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className="base__painel-roxo comandos__descricao-especial">Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
-      {(faseAtual.especialAtivo && !jogoAcabou) && <p className="base__painel-roxo comandos__descricao-especial" data-testid="descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
+      {(faseAtual.especialAtivo && !jogoAcabou && faseAtual.label=="Tutorial") && <p className="base__painel-roxo comandos__descricao-especial" data-testid="descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}
     </>
   );
 }
