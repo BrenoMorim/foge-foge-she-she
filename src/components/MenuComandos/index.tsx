@@ -8,6 +8,7 @@ import verificaSeEstaPreso from "util/verificaSeEstaPreso";
 import { useEffect, useState } from "react";
 import "./index.css";
 import "styles/base.css";
+import BotaoComando from "./components/BotaoComando";
 
 interface Props {
   faseAtual: IFase;
@@ -19,7 +20,7 @@ export default function MenuComandos({
   manipuladorDeState
 }: Props) {
 
-  const [ultimoComando, setUltimoComando] = useState(false);
+  const [verificacao, alternarVerificacao] = useState(false);
 
   function executaComando(direcao: typeof direcoes.Baixo) {
     movimentarPersonagem(
@@ -29,39 +30,26 @@ export default function MenuComandos({
       Personagens.sherlock,
       faseAtual.especialAtivo
       );
-      setUltimoComando(!ultimoComando);
+      alternarVerificacao(!verificacao);
     }
 
   useEffect(() => {
     verificaSeEstaPreso(faseAtual, faseAtual.especialAtivo, manipuladorDeState);
-  }, [ultimoComando]);
+  }, [verificacao]);
   
   const jogoAcabou = (faseAtual.ganhou || faseAtual.perdeu);
 
   return (
     <>
       <section className="comandos">
-        {listaDirecoes.map((direcao, index) => {
-          return (
-            <button
-              key={index}
-              onClick={() => executaComando(direcao)}
-              disabled={(!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock) || jogoAcabou)}
-              className="comandos__botao"
-              data-testid={direcao.toString}
-            >
-              <img alt={direcao.toString} src={"/assets/botoes/seta.svg"} className={`botao__imagem botao__imagem--${direcao.toString}`}/>
-            </button>
-          );
-        })}
-        <button
-          onClick={() => executaComando(direcoes.Especial)}
-          disabled={!faseAtual.especialAtivo || jogoAcabou}
-          className="comandos__botao"
-          data-testid="especial"
-        >
-          <img src="/assets/botoes/especial.svg" alt="Especial" className="botao__imagem"/>
-        </button>
+        {listaDirecoes.map((direcao) => (
+          <BotaoComando 
+            key={direcao.toString} 
+            direcao={direcao} 
+            funcaoOnClick={executaComando} 
+            desabilitado={!ehCaminho(direcao, faseAtual.mapa, faseAtual.posicaoPersonagens.sherlock)}/>
+        ))}
+        <BotaoComando direcao={direcoes.Especial} funcaoOnClick={executaComando} desabilitado={!faseAtual.especialAtivo}/>
       </section>
       {(faseAtual.especialAtivo && faseAtual.duracaoEspecial > 0) && <p className="base__painel-roxo comandos__descricao-especial">Turnos restantes com especial: {faseAtual.duracaoEspecial}</p>}
       {(faseAtual.especialAtivo && !jogoAcabou && faseAtual.label=="Tutorial") && <p className="base__painel-roxo comandos__descricao-especial" data-testid="descricao-especial">Você pegou o especial!<br/> Aperte o botão para espantar todos os ninjas em até 2 quadradinhos de distância!</p>}

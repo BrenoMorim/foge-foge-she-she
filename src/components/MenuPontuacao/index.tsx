@@ -1,3 +1,4 @@
+import { menuPontuacao } from 'mocks/textos';
 import './index.css';
 
 interface Props {
@@ -11,12 +12,12 @@ export default function MenuPontuacao({labelFase, pontuacao}: Props) {
         <section className="pontuacao base__painel-roxo">
             <article className="base__flex-container">
                 <h2 className="pontuacao__titulo">
-                    Fase: <span className="pontuacao__subtitulo" data-testid="fase-label">{labelFase}</span>
+                    { menuPontuacao.fase } <span className="pontuacao__subtitulo" data-testid="fase-label">{labelFase}</span>
                     </h2>
             </article>
             <article className="base__flex-container">
                 <h2 className="pontuacao__titulo">
-                    Pontuação: <span className="pontuacao__subtitulo" data-testid="fase-pontuacao">{pontuacao}</span>
+                { menuPontuacao.pontuacao } <span className="pontuacao__subtitulo" data-testid="fase-pontuacao">{pontuacao}</span>
                 </h2>
             </article>
         </section>

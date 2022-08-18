@@ -10,5 +10,5 @@ export const listaDirecoes = [
     direcoes.Cima,
     direcoes.Baixo,
     direcoes.Esquerda,
-    direcoes.Direita,
+    direcoes.Direita
   ];

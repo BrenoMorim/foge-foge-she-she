@@ -13,21 +13,30 @@
     margin-bottom: 0;
     line-height: 0;
     padding: 0;
-    height: 10vw;
+    height: 2rem;
 }
 .mapa__pixel {
-    width: 10vw;
-    height: 10vw;
+    width: 2rem;
+    height: 2rem;
     margin: 0;
     padding: 0;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 780px) {
     .mapa__pixel {
-        width: 4rem;
-        height: 4rem;
+        width: 2.75rem;
+        height: 2.75rem;
     }
     .mapa__linha {
-        height: 4rem;
+        height: 2.75rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .mapa__pixel {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .mapa__linha {
+        height: 3.5rem;
     }
 }
 .mapa__pixel img {

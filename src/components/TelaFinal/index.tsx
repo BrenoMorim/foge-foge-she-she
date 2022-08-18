@@ -3,6 +3,7 @@ import carregaFasePorId from 'util/carregaFasePorId';
 import ManipuladorDeState from 'util/ManipuladorDeState';
 import './index.css';
 import 'styles/base.css';
+import { telaFinal } from 'mocks/textos';
 
 interface Props {
     vitoria: boolean,
@@ -29,17 +30,17 @@ export default function TelaFinal({vitoria, pontuacaoFinal, manipuladorDeState}:
     }
     return (
         <section className="tela-final base__flex-container base__painel-roxo">
-            <h1 className="base__titulo">{vitoria ? 'Parabéns! Você ganhou =)' : 'Que pena! Você perdeu =('}</h1>
+            <h1 className="base__titulo">{vitoria ? telaFinal.mensagemVitoria : telaFinal.mensagemDerrota}</h1>
             {pontuacaoFinal !== 0 && 
-            <h2 className="base__subtitulo">Pontuação final: {pontuacaoFinal}</h2>}
+            <h2 className="base__subtitulo">{telaFinal.pontuacaoFinal} {pontuacaoFinal}</h2>}
             <button className="base__botao" onClick={voltarParaInicio}>
-                Voltar para o Início
+                {telaFinal.botaoVoltarParaInicio}
             </button>
             {<button className="base__botao" onClick={jogarNovamente}>
-                {vitoria ? 'Jogar Novamente' : 'Tentar Novamente'}
+                {vitoria ? telaFinal.botaoVitoria : telaFinal.botaoDerrota}
             </button>}
             {(vitoria && temProximaFase) && <button className="base__botao" onClick={irParaProximaFase}>
-                Ir para Próxima Fase
+                {telaFinal.botaoIrParaProxima}
             </button>}
         </section>
     );
