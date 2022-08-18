@@ -15,7 +15,8 @@ Object {
             <h2
               class="pontuacao__titulo"
             >
-              Fase: 
+              Fase:
+               
               <span
                 class="pontuacao__subtitulo"
                 data-testid="fase-label"
@@ -30,7 +31,8 @@ Object {
             <h2
               class="pontuacao__titulo"
             >
-              Pontuação: 
+              Pontuação:
+               
               <span
                 class="pontuacao__subtitulo"
                 data-testid="fase-pontuacao"
@@ -397,7 +399,7 @@ Object {
             disabled=""
           >
             <img
-              alt="cima"
+              alt="botão cima"
               class="botao__imagem botao__imagem--cima"
               src="/assets/botoes/seta.svg"
             />
@@ -407,7 +409,7 @@ Object {
             data-testid="baixo"
           >
             <img
-              alt="baixo"
+              alt="botão baixo"
               class="botao__imagem botao__imagem--baixo"
               src="/assets/botoes/seta.svg"
             />
@@ -418,7 +420,7 @@ Object {
             disabled=""
           >
             <img
-              alt="esquerda"
+              alt="botão esquerda"
               class="botao__imagem botao__imagem--esquerda"
               src="/assets/botoes/seta.svg"
             />
@@ -429,7 +431,7 @@ Object {
             disabled=""
           >
             <img
-              alt="direita"
+              alt="botão direita"
               class="botao__imagem botao__imagem--direita"
               src="/assets/botoes/seta.svg"
             />
@@ -440,8 +442,8 @@ Object {
             disabled=""
           >
             <img
-              alt="Especial"
-              class="botao__imagem"
+              alt="botão especial"
+              class="botao__imagem botao__imagem--especial"
               src="/assets/botoes/especial.svg"
             />
           </button>
@@ -460,7 +462,8 @@ Object {
           <h2
             class="pontuacao__titulo"
           >
-            Fase: 
+            Fase:
+             
             <span
               class="pontuacao__subtitulo"
               data-testid="fase-label"
@@ -475,7 +478,8 @@ Object {
           <h2
             class="pontuacao__titulo"
           >
-            Pontuação: 
+            Pontuação:
+             
             <span
               class="pontuacao__subtitulo"
               data-testid="fase-pontuacao"
@@ -842,7 +846,7 @@ Object {
           disabled=""
         >
           <img
-            alt="cima"
+            alt="botão cima"
             class="botao__imagem botao__imagem--cima"
             src="/assets/botoes/seta.svg"
           />
@@ -852,7 +856,7 @@ Object {
           data-testid="baixo"
         >
           <img
-            alt="baixo"
+            alt="botão baixo"
             class="botao__imagem botao__imagem--baixo"
             src="/assets/botoes/seta.svg"
           />
@@ -863,7 +867,7 @@ Object {
           disabled=""
         >
           <img
-            alt="esquerda"
+            alt="botão esquerda"
             class="botao__imagem botao__imagem--esquerda"
             src="/assets/botoes/seta.svg"
           />
@@ -874,7 +878,7 @@ Object {
           disabled=""
         >
           <img
-            alt="direita"
+            alt="botão direita"
             class="botao__imagem botao__imagem--direita"
             src="/assets/botoes/seta.svg"
           />
@@ -885,8 +889,8 @@ Object {
           disabled=""
         >
           <img
-            alt="Especial"
-            class="botao__imagem"
+            alt="botão especial"
+            class="botao__imagem botao__imagem--especial"
             src="/assets/botoes/especial.svg"
           />
         </button>

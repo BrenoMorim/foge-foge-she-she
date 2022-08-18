@@ -17,7 +17,7 @@ export default function BotaoComando({direcao, desabilitado, funcaoOnClick}: Pro
             className="comandos__botao"
             data-testid={direcao.toString}
         >
-            <img alt={direcao.toString} src={`/assets/botoes/${sourceImagem}.svg`} className={`botao__imagem botao__imagem--${direcao.toString}`}/>
+            <img alt={`botão ${direcao.toString}`} src={`/assets/botoes/${sourceImagem}.svg`} className={`botao__imagem botao__imagem--${direcao.toString}`}/>
         </button>
     );
 }
