@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  foge-foge-she-she:
+    image: breno/foge-foge-she-she:1.0
+    container_name: foge-foge-she-she
+    networks:
+      - compose-bridge
+    ports:
+      - 3000:3000
+networks:
+  compose-bridge:
+    driver: bridge

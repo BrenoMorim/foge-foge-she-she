@@ -1,0 +1,1 @@
+docker build . -t breno/foge-foge-she-she:1.0

@@ -15,3 +15,14 @@ npm install
 npm test
 npm start
 ```
+
+## Inicializando com Docker
+
+O projeto também dá suporte a inicialização com Docker, usando a imagem base node:18-alpine, o container está configurado para rodar na porta 3000.
+
+```bash
+git clone https://github.com/BrenoMorim/foge-foge-she-she.git foge-foge-she-she
+cd foge-foge-she-she
+./criar_imagem_docker.sh
+docker compose up
+```
