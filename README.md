@@ -16,8 +16,6 @@ Foge Foge She She é um jogo estilo pacman feito em homenagem a uma amiga e seu 
 
 O jogo contém apenas três páginas: a inicial, onde se escolhe qual fase você quer jogar; a interface do jogo em si, com o mapa da fase, os botões de comando e a pontuação; e uma página de não encontrado.
 
-## [Experimente o jogo =)](https://foge-foge-she-she.vercel.app/)
-
 ## Comandos para configurar e executar o projeto
 
 O projeto utiliza o npm para gerenciar as dependências e contém testes automatizados com jest. Os testes são divididos em 4 suits, três para garantir que cada uma das páginas (Página inicial, interface do jogo e não encontrado) são renderizadas corretamente, com todos os elementos necessários, e uma para garantir que o jogo pode ser jogado, contendo o comportamento esperado.
