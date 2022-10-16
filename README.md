@@ -10,7 +10,7 @@ Foge Foge She She é um jogo estilo pacman feito em homenagem a uma amiga e seu 
 | :label: Tecnologias | React, TypeScript, HTML, CSS
 | :rocket: URL         | https://foge-foge-she-she.vercel.app/
 
-![](https://github.com/BrenoMorim/foge-foge-she-she/blob/main/imagem-do-projeto.png#vitrinedev)
+![](https://github.com/BrenoMorim/foge-foge-she-she/blob/main/imagem-do-projeto.png?raw=true#vitrinedev)
 
 ## Detalhes do projeto
 
