@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:18-alpine as base
 WORKDIR /foge-foge-she-she
 
 ARG PORT_BUILD=3000
@@ -10,7 +10,10 @@ COPY package-lock.json ./
 COPY ./ ./
 
 RUN npm ci
-CMD ["npm", "cache", "clean", "--force"]
+CMD [ "npm", "cache", "clean", "--force" ]
 
-RUN npm run test
-ENTRYPOINT npm start
+FROM base as test
+CMD ["npm", "run", "test"]
+
+FROM base as development
+CMD ["npm", "start"]
