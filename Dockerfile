@@ -15,5 +15,7 @@ CMD [ "npm", "cache", "clean", "--force" ]
 FROM base as test
 CMD ["npm", "run", "test"]
 
-FROM base as development
-CMD ["npm", "start"]
+FROM base as build
+RUN npm run build
+RUN npm install -g serve
+CMD [ "serve", "-s", "build", "-p", "3000" ]
