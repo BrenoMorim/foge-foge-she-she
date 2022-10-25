@@ -29,7 +29,7 @@ export default function TelaFinal({vitoria, pontuacaoFinal, manipuladorDeState}:
         }
     }
     return (
-        <section className="tela-final base__flex-container base__painel-roxo">
+        <section className="tela-final base__flex-container base__painel-roxo animate__animated animate__bounceIn">
             <h1 className="base__titulo">{vitoria ? telaFinal.mensagemVitoria : telaFinal.mensagemDerrota}</h1>
             {pontuacaoFinal !== 0 && 
             <h2 className="base__subtitulo">{telaFinal.pontuacaoFinal} {pontuacaoFinal}</h2>}

@@ -16,7 +16,7 @@ export default function MenuEscolherFase() {
     }
 
     return (
-        <form className="menu-fases base__painel-roxo base__flex-container" onSubmit={irParaFase}>
+        <form className="menu-fases base__painel-roxo base__flex-container animate__animated animate__fadeIn" onSubmit={irParaFase}>
             <label className="menu-fases__rotulo" htmlFor="fases">{ menuEscolherFase.selectLabel }</label>
             <select onChange={evento => setFase(parseInt(evento.target.value))} name="fases" id="fases" defaultValue={1} className="menu-fases__fases base__painel-branco" required>
                 <option value="1" disabled>{ menuEscolherFase.selectPlaceholder }</option>

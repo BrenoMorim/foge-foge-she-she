@@ -14,7 +14,7 @@ Foge Foge She She é um jogo estilo pacman feito em homenagem a uma amiga e seu 
 
 ## Detalhes do projeto
 
-O jogo contém apenas três páginas: a inicial, onde se escolhe qual fase você quer jogar; a interface do jogo em si, com o mapa da fase, os botões de comando e a pontuação; e uma página de não encontrado.
+O jogo contém apenas três páginas: a inicial, onde se escolhe qual fase você quer jogar; a interface do jogo em si, com o mapa da fase, os botões de comando e a pontuação; e uma página de não encontrado. Toda a aplicação é animada, usando a biblioteca animate.css.
 
 ## Comandos para configurar e executar o projeto
 

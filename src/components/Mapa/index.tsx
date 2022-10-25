@@ -7,7 +7,7 @@ interface Props {
 
 export default function Mapa({mapa}: Props) {
     return (
-        <table className="mapa__container">
+        <table className="mapa__container animate__bounceIn">
             <tbody className="mapa">
             {mapa.map((linha, indexLinha) => {
                 return (

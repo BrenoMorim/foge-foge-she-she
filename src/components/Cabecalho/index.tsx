@@ -10,7 +10,7 @@ export default function Cabecalho() {
 
     return (
         <header className="cabecalho" onClick={voltarParaInicio}>
-            <img className="cabecalho__logo" src='/assets/logo.png'/>
+            <img className="cabecalho__logo animate__animated animate__bounceIn" src='/assets/logo.png'/>
         </header>
     );
 }
