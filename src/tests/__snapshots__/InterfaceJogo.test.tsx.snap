@@ -7,7 +7,7 @@ Object {
     <div>
       <section>
         <section
-          class="pontuacao base__painel-roxo"
+          class="pontuacao base__painel-roxo animate__animated animate__bounceInLeft"
         >
           <article
             class="base__flex-container"
@@ -43,7 +43,7 @@ Object {
           </article>
         </section>
         <table
-          class="mapa__container"
+          class="mapa__container animate__bounceIn"
         >
           <tbody
             class="mapa"
@@ -391,7 +391,7 @@ Object {
           </tbody>
         </table>
         <section
-          class="comandos"
+          class="comandos animate__animated animate__backInRight"
         >
           <button
             class="comandos__botao"
@@ -454,7 +454,7 @@ Object {
   "container": <div>
     <section>
       <section
-        class="pontuacao base__painel-roxo"
+        class="pontuacao base__painel-roxo animate__animated animate__bounceInLeft"
       >
         <article
           class="base__flex-container"
@@ -490,7 +490,7 @@ Object {
         </article>
       </section>
       <table
-        class="mapa__container"
+        class="mapa__container animate__bounceIn"
       >
         <tbody
           class="mapa"
@@ -838,7 +838,7 @@ Object {
         </tbody>
       </table>
       <section
-        class="comandos"
+        class="comandos animate__animated animate__backInRight"
       >
         <button
           class="comandos__botao"

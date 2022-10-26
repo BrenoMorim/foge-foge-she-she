@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <section
-        class="nao-encontrado base__painel-roxo base__flex-container"
+        class="nao-encontrado base__painel-roxo base__flex-container  animate__animated animate__bounceIn"
       >
         <h1
           class="base__titulo"
@@ -28,7 +28,7 @@ Object {
   </body>,
   "container": <div>
     <section
-      class="nao-encontrado base__painel-roxo base__flex-container"
+      class="nao-encontrado base__painel-roxo base__flex-container  animate__animated animate__bounceIn"
     >
       <h1
         class="base__titulo"
