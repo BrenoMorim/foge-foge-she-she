@@ -25,6 +25,7 @@
     margin: .5rem;
     cursor: pointer;
     font-weight: 600;
+    font-family: var(--fonte-alternativa);
     color: var(--roxo);
     background: var(--fundo-branco-vidro);
     border-radius: 2rem;
@@ -49,6 +50,7 @@
     margin-top: .5rem;
     margin-bottom: 1rem;
     line-height: 2.5rem;
+    font-family: var(--fonte-alternativa);
 }
 .base__subtitulo {
     font-size: 1.75rem;

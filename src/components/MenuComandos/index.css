@@ -30,7 +30,7 @@
     transform: scale(1.1);
 }
 .comandos__descricao-especial {
-    font-size: .9rem;
+    font-size: 1rem;
     line-height: 1.2rem;
     font-weight: 400;
     width: 90vw;
@@ -64,5 +64,9 @@
         row-gap: 1rem;
         right: 13vw;
         bottom: 15vh;
+    }
+    .comandos__descricao-especial {
+        font-size: 1.25rem;
+        line-height: 1.3rem;
     }
 }

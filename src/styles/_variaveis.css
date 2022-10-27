@@ -7,7 +7,8 @@
     --preto: #222222;
     --amarelo: #FFE603;
     --marrom: #A66821;
-    --fonte: 'Montserrat Alternates', sans-serif;
+    --fonte-alternativa: 'DynaPuff', cursive;
+    --fonte-padrao: 'Josefin Sans', sans-serif;
     --fundo-roxo-vidro: rgba(93, 13, 141, 0.68);
     --borda-roxo-vidro: .1rem solid rgba(93, 13, 141, 0.7);
     --fundo-branco-vidro: rgba(250, 250, 250, 0.85);

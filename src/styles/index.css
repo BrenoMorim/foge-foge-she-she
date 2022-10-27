@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 @import 'reset.css';
 @import 'styles/_variaveis.css';
+
+html {
+  max-width: 100vw;
+}
 
 body {
   background-color: var(--beje);
@@ -10,12 +15,17 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 100vw;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 850px) {
+  .container {
+    max-width: 850px;
+  }
 }
 .container * {
   box-sizing: border-box;
-  font-family: 'DynaPuff', cursive;
+  font-family: var(--fonte-padrao);
 }
 * {
   scrollbar-width: thin;

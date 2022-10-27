@@ -2,14 +2,14 @@
 
 .chamada {
     align-items: center;
-    padding: .75rem;
+    padding: .75rem .75rem 0 .75rem;
     color: var(--roxo);
     font-size: 1.2rem;
     text-align: center;
 }
 .chamada__titulo {
     margin-top: .75rem;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
     font-size: 1.2rem;
     line-height: 1.3rem;
     font-weight: 400;

@@ -9,6 +9,7 @@
 }
 .menu-fases__rotulo {
     text-align: center;
+    font-family: var(--fonte-alternativa);
     font-size: 1.25rem;
     color: var(--beje);
     margin-bottom: .25rem;

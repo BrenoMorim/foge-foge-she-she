@@ -26,6 +26,7 @@
 .pontuacao__titulo {
     font-weight: 600;
     color: var(--branco);
+    font-family: var(--fonte-alternativa);
 }
 @media screen and (min-width: 1440px) {
     .pontuacao {
