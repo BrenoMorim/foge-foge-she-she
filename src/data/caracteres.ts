@@ -27,17 +27,17 @@ export const pixelsMapa = [
     {
         caracter: caracteres.sherlock,
         imagem: 'sherlock.png',
-        classe: 'personagem'
+        classe: 'personagem animate__animated animate__bounceIn'
     },
     {
         caracter: caracteres.breno,
         imagem: 'breno.png',
-        classe: 'personagem'
+        classe: 'personagem animate__animated animate__bounceIn'
     },
     {
         caracter: caracteres.jaminha,
         imagem: 'jaminha.png',
-        classe: 'personagem'
+        classe: 'personagem animate__animated animate__bounceIn'
     },
     {
         caracter: caracteres.especial,

@@ -113,7 +113,7 @@ Object {
           data-testid="chamada"
         >
           <h3
-            class="chamada__titulo animate__animated animate__backInLeft"
+            class="chamada__titulo animate__animated animate__slideInLeft"
           >
             Ajude o Sherlock a fugir do breno e da jaminha ninjas!
           </h3>
@@ -122,17 +122,17 @@ Object {
           >
             <img
               alt="Breno ninja"
-              class="chamada__imagens__personagem animate__animated animate__backInLeft"
+              class="chamada__imagens__personagem animate__animated animate__slideInLeft"
               src="assets/mapa/breno.png"
             />
             <img
               alt="Jaminha ninja"
-              class="chamada__imagens__personagem animate__animated animate__backInRight"
+              class="chamada__imagens__personagem animate__animated animate__slideInLeft"
               src="assets/mapa/jaminha.png"
             />
           </div>
           <h3
-            class="chamada__titulo animate__animated animate__backInRight"
+            class="chamada__titulo animate__animated animate__slideInLeft"
           >
             Ele precisa comer todas as rações ou espantar todos os ninjas com suas garras!
           </h3>
@@ -249,7 +249,7 @@ Object {
         data-testid="chamada"
       >
         <h3
-          class="chamada__titulo animate__animated animate__backInLeft"
+          class="chamada__titulo animate__animated animate__slideInLeft"
         >
           Ajude o Sherlock a fugir do breno e da jaminha ninjas!
         </h3>
@@ -258,17 +258,17 @@ Object {
         >
           <img
             alt="Breno ninja"
-            class="chamada__imagens__personagem animate__animated animate__backInLeft"
+            class="chamada__imagens__personagem animate__animated animate__slideInLeft"
             src="assets/mapa/breno.png"
           />
           <img
             alt="Jaminha ninja"
-            class="chamada__imagens__personagem animate__animated animate__backInRight"
+            class="chamada__imagens__personagem animate__animated animate__slideInLeft"
             src="assets/mapa/jaminha.png"
           />
         </div>
         <h3
-          class="chamada__titulo animate__animated animate__backInRight"
+          class="chamada__titulo animate__animated animate__slideInLeft"
         >
           Ele precisa comer todas as rações ou espantar todos os ninjas com suas garras!
         </h3>

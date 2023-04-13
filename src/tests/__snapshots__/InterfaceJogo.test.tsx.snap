@@ -177,7 +177,7 @@ Object {
               >
                 <img
                   alt="sherlock"
-                  class="pixel__personagem"
+                  class="pixel__personagem animate__animated animate__bounceIn"
                   src="/assets/mapa/sherlock.png"
                 />
               </td>
@@ -235,7 +235,7 @@ Object {
               >
                 <img
                   alt="jaminha"
-                  class="pixel__personagem"
+                  class="pixel__personagem animate__animated animate__bounceIn"
                   src="/assets/mapa/jaminha.png"
                 />
               </td>
@@ -289,7 +289,7 @@ Object {
               >
                 <img
                   alt="breno"
-                  class="pixel__personagem"
+                  class="pixel__personagem animate__animated animate__bounceIn"
                   src="/assets/mapa/breno.png"
                 />
               </td>
@@ -624,7 +624,7 @@ Object {
             >
               <img
                 alt="sherlock"
-                class="pixel__personagem"
+                class="pixel__personagem animate__animated animate__bounceIn"
                 src="/assets/mapa/sherlock.png"
               />
             </td>
@@ -682,7 +682,7 @@ Object {
             >
               <img
                 alt="jaminha"
-                class="pixel__personagem"
+                class="pixel__personagem animate__animated animate__bounceIn"
                 src="/assets/mapa/jaminha.png"
               />
             </td>
@@ -736,7 +736,7 @@ Object {
             >
               <img
                 alt="breno"
-                class="pixel__personagem"
+                class="pixel__personagem animate__animated animate__bounceIn"
                 src="/assets/mapa/breno.png"
               />
             </td>

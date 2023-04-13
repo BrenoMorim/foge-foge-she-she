@@ -14,6 +14,7 @@ export default function Mapa({mapa}: Props) {
                 <tr key={indexLinha} className="mapa__linha">
                     {linha.map((caracter, indexCaracter) => {
                         const pixel = traduzCaracter(caracter);
+                        console.log(pixel)
                     return (
                         <td className="mapa__pixel" key={indexCaracter}>
                             <img src={`/assets/mapa/${pixel.imagem}`} alt={pixel.imagem.slice(0, -4)} className={`pixel__${pixel.classe}`}/>
